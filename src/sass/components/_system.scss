@@ -1,0 +1,119 @@
+.system{
+    margin-top: 101px;
+    margin-bottom: 100px;
+
+    &__title{
+        color: $titleColor;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 60px;
+@media screen and (min-width: 768px){
+font-size: 36px;
+}
+@media screen and (min-width: 1200px){
+    font-size: 40px;
+}
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__options{
+        width: 367px;
+        height: 138px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width: 768px){
+            height: 113px;
+
+        }
+    }
+
+    &__options:nth-child(1){
+            border-bottom: solid $accentColor;
+        @media screen and (min-width: 768px){
+            border-bottom: none;
+            border-right: solid $accentColor;
+        }
+        @media screen and (min-width: 1200px){
+            border-bottom: solid $accentColor;
+            border-right: none;
+        }
+    }
+
+    &__options:nth-child(2){
+            border-bottom: solid $accentColor;
+        @media screen and (min-width: 768px){
+            border: none;
+        }
+        @media screen and (min-width: 1200px){
+            border-bottom: solid $accentColor;
+            border-left: solid $accentColor;
+            border-right: solid $accentColor;
+        }
+    }
+
+    &__options:nth-child(3){
+            border-bottom: solid $accentColor;
+        @media screen and (min-width: 768px){
+            border-right: solid $accentColor;
+            border-bottom: solid $accentColor;
+            border-top: solid $accentColor;
+        }
+        @media screen and (min-width: 1200px){
+            border-bottom: solid $accentColor;
+            border-right: none;
+            border-top: none;
+        }
+    }
+
+    &__options:nth-child(4){
+            border-bottom: solid $accentColor;
+        @media screen and (min-width: 768px){
+            border-top: solid $accentColor;
+            border-bottom: solid $accentColor;
+        }
+        @media screen and (min-width: 1200px){
+            border: none;
+        }
+    }
+
+    &__options:nth-child(5){
+            border-bottom: solid $accentColor;
+            border-right: none;
+            border-left: none;
+        @media screen and (min-width: 768px){
+            border-left: none;
+            border-bottom: none;
+            border-right: solid $accentColor;
+        }
+        @media screen and (min-width: 1200px){
+            border-left: solid $accentColor;
+            border-right: solid $accentColor;
+        }
+
+        
+    }
+
+    &__containre{
+        width: 350px;
+        height: 93px;
+    }
+
+    &__text{
+        color: $titleColor;
+font-family: Urbanist;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+
+    &__orange{
+        color: $accentColor;
+    }
+}
