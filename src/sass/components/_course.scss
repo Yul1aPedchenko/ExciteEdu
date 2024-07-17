@@ -1,0 +1,89 @@
+.course {
+  background-color: $bgAccentColor;
+  padding: 40px 0;
+  &__wrap {
+    border: 1px solid rgba(17, 21, 24, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: $secondaryTitleColor;
+    transition: border 250ms ease-in-out;
+  }
+  &__wrap:hover {
+    border: 1px solid $accentColor;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: $titleColor;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 120%;
+    text-align: justify;
+    color: $textColor;
+    margin-bottom: 40px;
+  }
+  &__topic {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+  &__span {
+    font-weight: 500;
+  }
+  &__info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: $secondaryTextColor;
+    margin-bottom: 5px;
+  }
+  &__topic-wrap {
+    margin-bottom: 40px;
+  }
+  &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $accentColor;
+    border: 1px solid $accentColor;
+    padding: 9px 24px;
+    border-radius: 8px;
+    display: block;
+    width: 205px;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  &__btn:hover {
+    background-color: $accentColor;
+    color: $secondaryTitleColor;
+  }
+  &__img {
+    order: -1;
+    width: 252px;
+    height: 153px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+progress {
+  height: 7px;
+  width: 360px;
+  border-radius: 7px;
+  overflow: hidden;
+  display: block;
+}
+progress::-webkit-progress-bar {
+  background-color: #ffe8d2;
+  border: none;
+}
+progress::-webkit-progress-value {
+  background-color: $accentColor;
+  border-radius: 7px;
+}
