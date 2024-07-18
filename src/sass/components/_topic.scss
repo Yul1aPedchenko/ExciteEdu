@@ -25,12 +25,12 @@
     color: $accentColor;
   }
   &__question {
-    padding: 30px 15px;
+    padding: 17px 15px;
     border: 1px solid $bgAccentColor;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out, padding 500ms ease-in-out;;
   }
   &__theme {
     font-weight: 600;
@@ -52,6 +52,7 @@
   }
   &__question.open {
     background-color: $lesserBgAccentColor;
+    padding: 30px 15px;
   }
   &__question.open + .topic__answer {
     max-height: 1430px;
