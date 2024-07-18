@@ -1,5 +1,5 @@
 .hero {
-  background-image: linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/hero/team-mobile@1x.png);
+  background-image: linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@1x.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,9 +31,9 @@
     background-color: transparent;
   }
 }
-@supports (background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/hero/team-mobile@1x.webp)) {
+@supports (background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@1x.webp)) {
   .hero {
-    background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/hero/team-mobile@1x.webp);
+    background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@1x.webp);
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -43,11 +43,11 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/hero/team-mobile@2x.png);
+    background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@2x.png);
   }
-  @supports (background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/hero/team-mobile@2x.webp)) {
+  @supports (background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@2x.webp)) {
     .hero {
-      background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/hero/team-mobile@2x.webp);
+      background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@2x.webp);
     }
   }
 }
@@ -55,7 +55,7 @@
   .hero {
     padding-top: 92px;
     padding-bottom: 91px;
-    background-image: url(../img/hero/team-tablet@1x.png);
+    background-image: url(../img/home/hero/team-tablet@1x.png);
     background-position: top right;
     background-size: contain;
     background-size: 435px;
@@ -72,9 +72,9 @@
       color: $accentColor;
     }
   }
-  @supports (background-image: url(../img/hero/team-tablet@1x.webp)) {
+  @supports (background-image: url(../img/home/hero/team-tablet@1x.webp)) {
     .hero {
-      background-image: url(../img/hero/team-tablet@1x.webp);
+      background-image: url(../img/home/hero/team-tablet@1x.webp);
     }
   }
   @media (-webkit-min-device-pixel-ratio: 2),
@@ -84,11 +84,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../img/hero/team-tablet@2x.png);
+      background-image: url(../img/home/hero/team-tablet@2x.png);
     }
-    @supports (background-image: url(../img/hero/team-tablet@2x.webp)) {
+    @supports (background-image: url(../img/home/hero/team-tablet@2x.webp)) {
       .hero {
-        background-image: url(../img/hero/team-tablet@2x.webp);
+        background-image: url(../img/home/hero/team-tablet@2x.webp);
       }
     }
   }
@@ -97,16 +97,16 @@
   .hero {
     padding-top: 77px;
     padding-bottom: 76px;
-    background-image: url(../img/hero/team-desktop@1x.png);
+    background-image: url(../img/home/hero/team-desktop@1x.png);
     background-size: contain;
     &__title {
       font-size: 48px;
       width: 534px;
     }
   }
-  @supports (background-image: url(../img/hero/team-desktop@1x.webp)) {
+  @supports (background-image: url(../img/home/hero/team-desktop@1x.webp)) {
     .hero {
-      background-image: url(../img/hero/team-desktop@1x.webp);
+      background-image: url(../img/home/hero/team-desktop@1x.webp);
     }
   }
   @media (-webkit-min-device-pixel-ratio: 2),
@@ -116,11 +116,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../img/hero/team-desktop@2x.png);
+      background-image: url(../img/home/hero/team-desktop@2x.png);
     }
-    @supports (background-image: url(../img/hero/team-desktop@2x.webp)) {
+    @supports (background-image: url(../img/home/hero/team-desktop@2x.webp)) {
       .hero {
-        background-image: url(../img/hero/team-desktop@2x.webp);
+        background-image: url(../img/home/hero/team-desktop@2x.webp);
       }
     }
   }
