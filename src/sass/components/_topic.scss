@@ -35,7 +35,8 @@
   &__theme {
     font-weight: 600;
     line-height: 120%;
-    color: $accentColor;
+    color: $secondaryTextColor;
+    transition: color 500ms ease-in-out;
   }
   &__icon-arrow {
     width: 25px;
@@ -43,7 +44,7 @@
     fill: none;
     stroke: $accentColor;
     transform: rotate(180deg);
-    transition:  transform 500ms ease-in-out;
+    transition:  transform 250ms ease-in-out;
   }
   &__answer {
     max-height: 0;
@@ -53,6 +54,9 @@
   &__question.open {
     background-color: $lesserBgAccentColor;
     padding: 30px 15px;
+  }
+  &__question.open > .topic__theme {
+    color: $accentColor;
   }
   &__question.open + .topic__answer {
     max-height: 1430px;
