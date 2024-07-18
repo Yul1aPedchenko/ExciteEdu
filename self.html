@@ -28,7 +28,7 @@
     <div class="header__wrap">
       <a href="./index.html" class="header__logo">
         <svg class="header__icon">
-          <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-logo"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-64591892.svg#icon-logo"></use>
         </svg>
       </a>
       <button
@@ -39,7 +39,7 @@
         height="28"
       >
         <svg class="menu__burger-icon" width="28" height="28">
-          <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-menu"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-64591892.svg#icon-menu"></use>
         </svg>
       </button>
       <nav class="header__nav">
@@ -70,12 +70,12 @@
   <div class="menu__wrap">
     <a href="./index.html" class="menu__logo">
       <svg class="menu__logo-icon">
-        <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-logo"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-64591892.svg#icon-logo"></use>
       </svg>
     </a>
     <button class="menu-toggle js-close-menu">
       <svg class="menu__icon-close" width="40" height="40">
-        <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-close"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-64591892.svg#icon-close"></use>
       </svg>
     </button>
   </div>
@@ -142,36 +142,121 @@
     </p>
     <ul class="resources__list">
       <li class="resources__iteam">
-        <svg class="footer__icon">
-          <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-opencourse"></use>
-        </svg>
+        <picture>
+          <source
+            srcset="
+              ./img/self/resources/ocw@1x.png 1x,
+              ./img/self/resources/ocw@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./img/self/resources/ocw@1x.webp 1x,
+              ./img/self/resources/ocw@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img src="./img/self/resources/ocw@1x.png" alt="MIT OpenCourseware" />
+        </picture>
         <h2 class="resources__subtitle">MIT OpenCourseware</h2>
         <p class="resources__subtext">
           Access to lectures and materials from physics courses taught at MIT.
         </p>
-        <a href="#" class="resources__link">Follow the link</a>
+        <a href="https://ocw.mit.edu/search/?d=Physics&s=department_course_numbers.sort_coursenum" class="resources__link">Follow the link</a>
       </li>
       <li class="resources__iteam">
-        <svg class="footer__icon">
-          <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-leaf"></use>
-        </svg>
+        <picture>
+          <source
+            srcset="
+              ./img/self/resources/khan-academy@1x.png 1x,
+              ./img/self/resources/khan-academy@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./img/self/resources/khan-academy@1x.webp 1x,
+              ./img/self/resources/khan-academy@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="./img/self/resources/khan-academy@1x.png"
+            alt="khan academy logo"
+          />
+        </picture>
         <h2 class="resources__subtitle">Khan Academy</h2>
         <p class="resources__subtext">
           Great educational videos on various topics, including physics. A free
           online resource with physics lessons, exercises and tests for
           different levels.
         </p>
-        <a href="#" class="resources__link">Go to YouTube or link</a>
+        <a
+          href="https://www.youtube.com/user/khanacademy"
+          class="resources__link"
+          >Go to YouTube or
+          <a class="resources__link" href="https://www.khanacademy.org/science/physics">link</a></a
+        >
       </li>
       <li class="resources__iteam">
-        <svg class="footer__icon">
-          <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-minutephiziks"></use>
-        </svg>
+        <picture>
+          <source
+            srcset="
+              ./img/self/resources/minute-physics@1x.png 1x,
+              ./img/self/resources/minute-physics@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./img/self/resources/minute-physics@1x.webp 1x,
+              ./img/self/resources/minute-physics@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="./img/self/resources/minute-physics@1x.png"
+            alt="minute physics logo"
+          />
+        </picture>
         <h2 class="resources__subtitle">MinutePhysics</h2>
         <p class="resources__subtext">
           Videos that explain physics concepts in 1 minute.
         </p>
-        <a href="#" class="resources__link">Go to YouTube</a>
+        <a
+          href="https://www.youtube.com/user/minutephysics"
+          class="resources__link"
+          >Go to YouTube</a
+        >
+      </li>
+      <li class="resources__iteam">
+        <picture>
+          <source
+            srcset="
+              ./img/self/resources/num@1x.png 1x,
+              ./img/self/resources/num@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./img/self/resources/num@1x.webp 1x,
+              ./img/self/resources/num@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img src="./img/self/resources/num@1x.png" alt="Numberphile logo" />
+        </picture>
+        <h2 class="resources__subtitle">Numberphile</h2>
+        <p class="resources__subtext">
+          Videos that explore various mathematical concepts relevant to physics.
+        </p>
+        <a
+          href="https://www.youtube.com/user/numberphile"
+          class="resources__link"
+          >Go to YouTube or <a class="resources__link" href="https://www.numberphile.com/">link</a></a
+        >
       </li>
     </ul>
     <button type="button" class="resources__button">Show more</button>
@@ -181,7 +266,7 @@
     <footer class="footer">
   <div class="container">
     <svg class="footer__icon">
-      <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-logo"></use>
+      <use href="/ExciteEdu/assets/symbol-defs-64591892.svg#icon-logo"></use>
     </svg>
     <h2 class="footer__title">ExciteEdu</h2>
     <ul class="footer__list">
@@ -193,7 +278,7 @@
       </li>
     </ul>
     <svg class="footer__icon">
-      <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-instagram"></use>
+      <use href="/ExciteEdu/assets/symbol-defs-64591892.svg#icon-instagram"></use>
     </svg>
     <ul class="footer__list">
       <p class="footer__text">©Copyright ExciteEdu</p>
