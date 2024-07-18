@@ -1,0 +1,125 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $secondaryTitleColor;
+  transform: translateX(100%);
+  transition-duration: 350ms;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-toggle {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  .menu__burger-icon {
+    fill: $titleColor;
+    transition: fill 250ms ease-in-out;
+    &:hover {
+      fill: $secondaryTextColor;
+    }
+  }
+  .menu__icon-close {
+    stroke: $titleColor;
+    width: 20px;
+    height: 20px;
+    transition: stroke 250ms ease-in-out;
+    &:hover {
+      stroke: $secondaryTextColor;
+    }
+  }
+}
+.menu__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.menu__logo {
+  display: flex;
+  width: 150px;
+  height: 60px;
+}
+.menu__item {
+  margin-bottom: 30px;
+}
+.menu__link {
+  font-weight: 700;
+  color: $titleColor;
+  transition: color 250ms ease-in-out;
+  font-size: 30px;
+  &:hover {
+    color: $lesserAccentColor;
+  }
+}
+.menu__btn-list {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .header__nav,
+  .header__btn-list {
+    display: none;
+  }
+}
+.header {
+  border-bottom: 1px solid $borderColor;
+  padding: 15px 0;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 150px;
+    height: 60px;
+    display: flex;
+  }
+  &__btn-item:first-child {
+    margin-right: 20px;
+  }
+  &__btn {
+    padding: 10px 36px;
+    border: 1px solid $accentColor;
+    color: $secondaryTitleColor;
+    background-color: $accentColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    border-radius: 8px;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  &__btn:hover {
+    background-color: transparent;
+    color: $accentColor;
+  }
+  &__btn-login {
+    padding: 10px 43px;
+    background-color: transparent;
+    color: $accentColor;
+  }
+  &__btn-login:hover {
+    background-color: $lesserAccentColor;
+    color: $secondaryTitleColor;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .header {
+    padding: 20px 0;
+    &__btn-list {
+      display: flex;
+    }
+  }
+}
