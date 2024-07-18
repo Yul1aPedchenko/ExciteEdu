@@ -118,6 +118,25 @@
   }
   .header {
     padding: 20px 0;
+    &__list {
+      display: flex;
+    }
+    &__item:not(:last-child) {
+      margin-right: 25px;
+    }
+    &__link {
+      font-weight: 700;
+      line-height: 120%;
+      font-size: 16px;
+      color: $titleColor;
+      transition: color 250ms ease-in-out;
+    }
+    &__link:hover {
+      color: $lesserAccentColor;
+    }
+    &__link--active {
+      color: $accentColor;
+    }
     &__btn-list {
       display: flex;
     }
