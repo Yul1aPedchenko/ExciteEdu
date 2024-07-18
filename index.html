@@ -19,14 +19,89 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/main-eae4b7b5.js"></script>
-    <link rel="stylesheet" href="/ExciteEdu/assets/main-e32cfddc.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/mobile-menu-03f7b64e.js"></script>
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-eab085d3.css">
   </head>
   <body>
-    <header>
-    <a href="./study.html">topic</a>
-    <a href="./self.html">self</a>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrap">
+      <a href="./index.html" class="header__logo">
+        <svg class="header__icon">
+          <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        width="28"
+        height="28"
+      >
+        <svg class="menu__burger-icon" width="28" height="28">
+          <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./index.html" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="./self.html" class="header__link">My course</a>
+          </li>
+          <li class="header__item">
+            <a href="#footer" class="header__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__btn-list">
+        <li class="header__btn-item">
+          <button class="header__btn header__btn-login">Login</button>
+        </li>
+        <li class="header__btn-item">
+          <button class="header__btn header__btn-sign">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu__wrap">
+    <a href="./index.html" class="menu__logo">
+      <svg class="menu__logo-icon">
+        <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu__icon-close" width="40" height="40">
+        <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="menu__nav">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="./index.html" class="menu__link header__link--active">Home</a>
+      </li>
+      <li class="menu__item">
+        <a href="./self.html" class="menu__link">My course</a>
+      </li>
+      <li class="menu__item">
+        <a href="#footer" class="menu__link">Contact us</a>
+      </li>
+    </ul>
+    <ul class="menu__btn-list">
+      <li class="menu__btn-item header__btn-item">
+        <button class="menu__btn header__btn header__btn-login">Login</button>
+      </li>
+      <li class="menu__btn-item header__btn-item">
+        <button class="menu__btn header__btn header__btn-sign">Sign Up</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
     <section class="hero">
   <div class="container">
     <div class="hero__wrap">
@@ -114,7 +189,7 @@
     <footer class="footer">
   <div class="container">
     <svg class="footer__icon">
-      <use href="/ExciteEdu/assets/symbol-defs-45b492b0.svg#icon-logo"></use>
+      <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-logo"></use>
     </svg>
     <h2 class="footer__title">ExciteEdu</h2>
     <ul class="footer__list">
@@ -126,7 +201,7 @@
       </li>
     </ul>
     <svg class="footer__icon">
-      <use href="/ExciteEdu/assets/symbol-defs-45b492b0.svg#icon-instagram"></use>
+      <use href="/ExciteEdu/assets/symbol-defs-ad585351.svg#icon-instagram"></use>
     </svg>
     <ul class="footer__list">
       <p class="footer__text">©Copyright ExciteEdu</p>
@@ -135,6 +210,7 @@
   </div>
 </footer>
 
+    
     
   </body>
 </html>
