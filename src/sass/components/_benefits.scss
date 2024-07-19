@@ -85,11 +85,6 @@
     margin: 0 auto;
     padding: 15px 25px;
     transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-      margin: 0;
-    }
   }
   &__button:hover {
     background-color: $secondaryTitleColor;
