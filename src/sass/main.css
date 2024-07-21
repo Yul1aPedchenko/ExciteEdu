@@ -1233,4 +1233,40 @@ progress::-webkit-progress-value {
 }
 .topic__video-box iframe {
   margin-bottom: 20px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.footer__list {
+  display: flex;
+  gap: 40px;
+}
+.footer__link {
+  color: #111518;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120.006%; /* 28.801px */
+}
+.footer__sublist {
+  background: #111518;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }/*# sourceMappingURL=main.css.map */
