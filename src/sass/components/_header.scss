@@ -108,7 +108,7 @@
     color: $accentColor;
   }
   &__btn-login:hover {
-    background-color: $lesserAccentColor;
+    background-color: $accentColor;
     color: $secondaryTitleColor;
   }
 }
@@ -139,6 +139,16 @@
     }
     &__btn-list {
       display: flex;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__link {
+      font-size: 20px;
     }
   }
 }
