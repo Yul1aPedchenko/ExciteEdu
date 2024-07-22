@@ -87,3 +87,49 @@ progress::-webkit-progress-value {
   background-color: $accentColor;
   border-radius: 7px;
 }
+
+@media screen and (min-width: 768px) {
+  .course {
+    &__wrap {
+      padding: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &__title {
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    &__text {
+      text-align: left;
+    }
+    &__text-wrapper {
+      width: 428px;
+    }
+    &__img {
+      order: 1;
+      margin: 0;
+    }
+  }
+  progress {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .course {
+    &__topic-wrap {
+      margin-bottom: 85px;
+    }
+    &__text-wrapper {
+      width: 611px;
+      margin-right: 78px;
+    }
+    &__img {
+      width: 391px;
+      height: 237px;
+    }
+  }
+  progress {
+    width: 572px;
+  }
+}
