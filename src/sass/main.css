@@ -190,7 +190,7 @@ body {
   color: #FF8A1D;
 }
 .header__btn-login:hover {
-  background-color: rgba(255, 138, 29, 0.5);
+  background-color: #FF8A1D;
   color: #fff;
 }
 
@@ -222,6 +222,14 @@ body {
   }
   .header__btn-list {
     display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .header__link {
+    font-size: 20px;
   }
 }
 .hero {
@@ -426,6 +434,135 @@ body {
     transform: translateX(-100%);
   }
 }
+.preferences {
+  margin-top: 100px;
+}
+.preferences__title {
+  text-align: center;
+  color: #111518;
+  font-family: Urbanist;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .preferences__title {
+    font-size: 40px;
+  }
+}
+.preferences__span {
+  color: #ff8a1d;
+  font-family: Urbanist;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .preferences__span {
+    font-size: 40px;
+  }
+}
+.preferences__subtitle {
+  color: #111518;
+  font-family: Urbanist;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .preferences__subtitle {
+    font-size: 24px;
+  }
+}
+.preferences__text {
+  color: #111518;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .preferences__text {
+    font-size: 16px;
+  }
+}
+.preferences__subtext {
+  width: 330px;
+}
+.preferences__img {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 330px;
+  height: 170px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .preferences__img {
+    padding-left: 15px;
+    padding-right: 21px;
+    padding-top: 15px;
+    width: 270px;
+    height: 170px;
+  }
+}
+.preferences__button {
+  width: 175px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ff8a1d;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .preferences__button {
+    width: 200px;
+  }
+}
+.preferences__list {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .preferences__list {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+.preferences__iteam {
+  width: 370px;
+  height: 419px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(17, 21, 24, 0.1);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .preferences__iteam {
+    width: 300px;
+    height: 394px;
+  }
+}
+
 .benefits {
   margin-top: 100px;
   padding-bottom: 100px;
@@ -1037,6 +1174,109 @@ progress::-webkit-progress-value {
   border-radius: 7px;
 }
 
+@media screen and (min-width: 768px) {
+  .course__wrap {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .course__title {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .course__text {
+    text-align: left;
+  }
+  .course__text-wrapper {
+    width: 428px;
+  }
+  .course__img {
+    order: 1;
+    margin: 0;
+  }
+  progress {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .course__topic-wrap {
+    margin-bottom: 85px;
+  }
+  .course__text-wrapper {
+    width: 611px;
+    margin-right: 78px;
+  }
+  .course__img {
+    width: 391px;
+    height: 237px;
+  }
+  progress {
+    width: 572px;
+  }
+}
+.remember {
+  padding: 50px 0;
+}
+.remember__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.remember__span {
+  color: #FF8A1D;
+}
+.remember__text {
+  font-weight: 600;
+  line-height: 120%;
+  text-align: justify;
+  color: #5f5f5f;
+  margin-bottom: 30px;
+}
+.remember__btn {
+  font-weight: 600;
+  color: #FF8A1D;
+  border: none;
+  background-color: transparent;
+  padding: 10px 40px;
+  border: 1px solid #FF8A1D;
+  border-radius: 8px;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  display: flex;
+  margin: 0 auto;
+}
+.remember__btn:hover {
+  color: #fff;
+  background-color: #FF8A1D;
+}
+
+@media screen and (min-width: 768px) {
+  .remember {
+    padding: 60px 0;
+  }
+  .remember__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .remember__text {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .remember {
+    padding: 80px 0;
+  }
+  .remember__title {
+    font-size: 40px;
+  }
+  .remember__text {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
 .calendar {
   margin-bottom: 60px;
 }
@@ -1210,6 +1450,7 @@ progress::-webkit-progress-value {
   line-height: 120%;
   font-size: 16px;
   font-weight: 600;
+  margin: 0 auto;
 }
 .topic__span {
   font-size: 20px;
@@ -1233,8 +1474,68 @@ progress::-webkit-progress-value {
 }
 .topic__video-box iframe {
   margin-bottom: 20px;
+  width: 390px;
+  height: 200px;
 }
 
+@media screen and (min-width: 768px) {
+  .topic__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .topic__item:first-child, .topic__item:last-child {
+    display: block;
+  }
+  .topic__item:first-child .topic__chapter, .topic__item:last-child .topic__chapter {
+    color: rgba(255, 138, 29, 0.5);
+    font-size: 20px;
+  }
+  .topic__chapter {
+    width: 188px;
+  }
+  .topic__question {
+    padding: 15px 30px;
+  }
+  .topic__theme {
+    font-size: 24px;
+  }
+  .topic__question.open {
+    padding: 30px;
+  }
+  .topic__text {
+    width: 678px;
+    font-size: 22px;
+  }
+  .topic__span {
+    font-size: 24px;
+  }
+  .topic__btn {
+    font-size: 24px;
+  }
+  .topic__video-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .topic__video-box iframe {
+    margin-bottom: 35px;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topic__item:not(:last-child) {
+    margin-right: 100px;
+  }
+  .topic__item:first-child .topic__chapter, .topic__item:last-child .topic__chapter {
+    font-size: 24px;
+  }
+  .topic__chapter {
+    width: 228px;
+    font-size: 32px;
+  }
+  .topic__text {
+    width: 1110px;
+  }
+}
 .footer {
   margin-top: 100px;
 }
