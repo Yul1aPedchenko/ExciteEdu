@@ -1,0 +1,93 @@
+.intro {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 13px;
+  background-image: url(../../img/self/resources/intro-bacround@mobile-1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../img/self/resources/intro-bacround@mobile-2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-position-x: 400px;
+    background-position-y: 21px;
+    background-image: url(../../img/self/resources/intro-bacround@tablet-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/self/resources/intro-bacround@tablet-2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-position-x: 643px;
+    background-position-y: 27px;
+    background-image: url(../../img/self/resources/intro-bacround@desktop-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/self/resources/intro-bacround@desktop-2x.png);
+    }
+  }
+  &__container {
+    padding-top: 250px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 147px;
+      padding-top: 70px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 160px;
+      padding-top: 100px;
+    }
+  }
+  &__text {
+    color: #111518;
+    font-family: Urbanist;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+      margin-bottom: 45px;
+      max-width: 451px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 64px;
+      margin-bottom: 35px;
+      max-width: 725px;
+    }
+  }
+  &__subtext {
+    color: #ff8a1d;
+    font-family: Urbanist;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 64px;
+    }
+  }
+  &__button {
+    width: 179px;
+    height: 54px;
+    border-radius: 8px;
+    background: #ff8a1d;
+    color: #fff;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
