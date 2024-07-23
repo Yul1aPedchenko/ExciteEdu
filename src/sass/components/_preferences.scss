@@ -2,89 +2,68 @@
   margin-top: 100px;
   &__title {
     text-align: center;
-    color: #111518;
-    font-family: Urbanist;
+    color: $titleColor;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     @media screen and (min-width: 768px) {
       font-size: 40px;
     }
   }
   &__span {
-    color: #ff8a1d;
-    font-family: Urbanist;
+    color: $accentColor;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     @media screen and (min-width: 768px) {
       font-size: 40px;
     }
   }
   &__subtitle {
-    color: #111518;
-    font-family: Urbanist;
+    color: $titleColor;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    padding-top: 20px;
-    text-align: center;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     @media screen and (min-width: 768px) and (max-width: 1200px) {
       font-size: 24px;
     }
   }
   &__text {
-    color: #111518;
-    font-family: Urbanist;
+    color: $titleColor;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     @media screen and (min-width: 768px) and (max-width: 1200px) {
-        font-size: 16px;
-      }
+      font-size: 16px;
+    }
   }
   &__subtext {
-    width: 330px;
+    max-width: 330px;
   }
   &__img {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
     width: 330px;
     height: 170px;
     @media screen and (min-width: 768px) and (max-width: 1200px) {
-      padding-left: 15px;
-      padding-right: 21px;
-      padding-top: 15px;
       width: 270px;
       height: 170px;
     }
   }
   &__button {
-    width: 175px;
-    height: 39px;
-    flex-shrink: 0;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    padding: 10px 48px;
     border-radius: 8px;
-    background: #ff8a1d;
+    background-color: $accentColor;
     border: none;
-    color: #fff;
-    text-align: center;
-    font-family: Urbanist;
+    color: $secondaryTitleColor;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    margin-left: 20px;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-        width: 200px;
-      }
+    border: 1px solid $accentColor;
+    @media screen and (min-width: 768px){
+      padding: 10px 60px;
+    }
+  }
+  &__button:hover {
+    color: $accentColor;
+    background-color: $secondaryTitleColor;
   }
   &__list {
     display: flex;
@@ -92,21 +71,19 @@
     gap: 56px;
     margin-top: 50px;
     @media screen and (max-width: 768px) {
-        flex-direction: column;
-        row-gap: 20px;
-      }
+      flex-direction: column;
+      row-gap: 20px;
+    }
   }
-  &__iteam {
-    width: 370px;
-    height: 419px;
-    flex-shrink: 0;
+  &__item {
+    padding: 20px;
     border-radius: 8px;
     border: 1px solid rgba(17, 21, 24, 0.1);
-    background: #fff;
+    background-color: $secondaryTitleColor;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-      width: 300px;
-      height: 394px;
+    width: 370px;
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
     }
   }
 }

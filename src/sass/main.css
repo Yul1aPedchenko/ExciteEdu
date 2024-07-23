@@ -440,11 +440,8 @@ body {
 .preferences__title {
   text-align: center;
   color: #111518;
-  font-family: Urbanist;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .preferences__title {
@@ -452,12 +449,9 @@ body {
   }
 }
 .preferences__span {
-  color: #ff8a1d;
-  font-family: Urbanist;
+  color: #FF8A1D;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .preferences__span {
@@ -466,14 +460,10 @@ body {
 }
 .preferences__subtitle {
   color: #111518;
-  font-family: Urbanist;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  padding-top: 20px;
-  text-align: center;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .preferences__subtitle {
@@ -482,13 +472,9 @@ body {
 }
 .preferences__text {
   color: #111518;
-  font-family: Urbanist;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .preferences__text {
@@ -496,44 +482,37 @@ body {
   }
 }
 .preferences__subtext {
-  width: 330px;
+  max-width: 330px;
 }
 .preferences__img {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
   width: 330px;
   height: 170px;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .preferences__img {
-    padding-left: 15px;
-    padding-right: 21px;
-    padding-top: 15px;
     width: 270px;
     height: 170px;
   }
 }
 .preferences__button {
-  width: 175px;
-  height: 39px;
-  flex-shrink: 0;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  padding: 10px 48px;
   border-radius: 8px;
-  background: #ff8a1d;
+  background-color: #FF8A1D;
   border: none;
   color: #fff;
-  text-align: center;
-  font-family: Urbanist;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  margin-left: 20px;
+  border: 1px solid #FF8A1D;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .preferences__button {
-    width: 200px;
+    padding: 10px 60px;
   }
+}
+.preferences__button:hover {
+  color: #FF8A1D;
+  background-color: #fff;
 }
 .preferences__list {
   display: flex;
@@ -547,19 +526,17 @@ body {
     row-gap: 20px;
   }
 }
-.preferences__iteam {
-  width: 370px;
-  height: 419px;
-  flex-shrink: 0;
+.preferences__item {
+  padding: 20px;
   border-radius: 8px;
   border: 1px solid rgba(17, 21, 24, 0.1);
-  background: #fff;
+  background-color: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 370px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .preferences__iteam {
-    width: 300px;
-    height: 394px;
+@media screen and (max-width: 768px) {
+  .preferences__item {
+    margin: 0 auto;
   }
 }
 
@@ -886,44 +863,45 @@ body {
   color: #FF8A1D;
 }
 
-.intro {
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 13px;
-  background-image: url(../../img/self/resources/intro-bacround@mobile-1x.png);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .intro {
-    background-image: url(../../img/self/resources/intro-bacround@mobile-2x.png);
-  }
-}
-@media screen and (min-width: 768px) {
-  .intro {
-    background-position-x: 400px;
-    background-position-y: 21px;
-    background-image: url(../../img/self/resources/intro-bacround@tablet-1x.png);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .intro {
-    background-image: url(../../img/self/resources/intro-bacround@tablet-2x.png);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .intro {
-    background-position-x: 643px;
-    background-position-y: 27px;
-    background-image: url(../../img/self/resources/intro-bacround@desktop-1x.png);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .intro {
-    background-image: url(../../img/self/resources/intro-bacround@desktop-2x.png);
-  }
-}
 .intro__container {
   padding-top: 250px;
   padding-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 250px;
+  background-position-y: 13px;
+  background-image: url(../img/self/intro/intro-background@mobile-1x.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .intro__container {
+    background-image: url(../img/self/intro/intro-background@mobile-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro__container {
+    background-position-x: right;
+    background-position-y: 21px;
+    background-size: 400px;
+    background-image: url(../img/self/intro/intro-background@tablet-1x.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .intro__container {
+    background-image: url(../img/self/intro/intro-background@tablet-2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro__container {
+    background-position-x: 643px;
+    background-position-y: 27px;
+    background-size: 500px;
+    background-image: url(../img/self/intro/intro-background@desktop-1x.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .intro__container {
+    background-image: url(../img/self/intro/intro-background@desktop-2x.png);
+  }
 }
 @media screen and (min-width: 768px) {
   .intro__container {
@@ -939,11 +917,8 @@ body {
 }
 .intro__text {
   color: #111518;
-  font-family: Urbanist;
   font-size: 36px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -961,12 +936,9 @@ body {
   }
 }
 .intro__subtext {
-  color: #ff8a1d;
-  font-family: Urbanist;
+  color: #FF8A1D;
   font-size: 36px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .intro__subtext {
@@ -979,21 +951,26 @@ body {
   }
 }
 .intro__button {
-  width: 179px;
-  height: 54px;
+  padding: 15px 40px;
   border-radius: 8px;
-  background: #ff8a1d;
+  background-color: #FF8A1D;
   color: #fff;
-  text-align: center;
-  font-family: Urbanist;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: flex;
+  width: 275px;
+  margin: 0 auto;
+  border: 1px solid #FF8A1D;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .intro__button {
+    margin: 0;
+  }
+}
+.intro__button:hover {
+  color: #FF8A1D;
+  background-color: #fff;
 }
 
 .statistic {
@@ -1327,29 +1304,26 @@ progress::-webkit-progress-value {
 }
 .resources__title {
   color: #111518;
-  font-family: Urbanist;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 120.006%; /* 48.002px */
+  line-height: 120.006%;
   margin-bottom: 10px;
 }
 .resources__text {
   color: #5f5f5f;
-  font-family: Urbanist;
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 120.006%; /* 28.801px */
+  line-height: 120.006%;
   margin-bottom: 40px;
 }
 .resources__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.resources__iteam {
+.resources__item {
   width: 300px;
   height: 300px;
-  flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid rgba(17, 21, 24, 0.1);
   background: #fff;
@@ -1357,36 +1331,27 @@ progress::-webkit-progress-value {
 }
 .resources__subtitle {
   color: #111518;
-  font-family: Urbanist;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 120.006%; /* 24.001px */
+  line-height: 120.006%;
 }
 .resources__subtext {
   color: #5f5f5f;
-  font-family: Urbanist;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 120.006%; /* 19.201px */
+  line-height: 120.006%;
 }
 .resources__link {
-  color: #ff8a1d;
-  font-family: Urbanist;
+  color: #FF8A1D;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 120.006%; /* 24.001px */
+  line-height: 120.006%;
 }
 .resources__button {
-  color: #ff8a1d;
+  color: #FF8A1D;
   text-align: center;
-  font-family: Urbanist;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .remember {
