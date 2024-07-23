@@ -1,8 +1,8 @@
-<section class="reviews">
+<!-- <section class="reviews">
   <div class="container">
     <h2 class="reviews__title">Reviews</h2>
     <div class="reviews__wrap">
-      <svg class="reviews__icon">
+      <svg id="prev" class="reviews__icon">
         <use href="./img/symbol-defs.svg#icon-arrow-left"></use>
       </svg>
       <ul class="reviews__list">
@@ -75,9 +75,118 @@
           </p>
         </li>
       </ul>
-      <svg class="reviews__icon">
+      <svg id="next" class="reviews__icon">
         <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
       </svg>
+    </div>
+  </div>
+</section> -->
+<section class="reviews">
+  <div class="container">
+    <h2 class="reviews__title">Reviews</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide reviews__item">
+          <div class="reviews__info-wrap">
+            <picture>
+              <source
+                srcset="
+                  ./img/home/reviews/lilli@1x.png 1x,
+                  ./img/home/reviews/lilli@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/home/reviews/lilli@1x.webp 1x,
+                  ./img/home/reviews/lilli@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="reviews__img"
+                src="./img/home/reviews/lilli@1x.png"
+                alt="lilli"
+              />
+            </picture>
+            <h2 class="reviews__name">Lilli Glass</h2>
+          </div>
+          <p class="reviews__text">
+            I really liked the course "Middle school physics"! The teachers
+            explain the material perfectly, and the lessons are always
+            interesting and interactive. Most of all, I like the experiments we
+            do in class - they help us to better understand the theory. I also
+            learned a lot about how physics is applied in everyday life. This
+            course is not only useful, but also exciting!
+          </p>
+        </div>
+        <div class="swiper-slide reviews__item">
+          <div class="reviews__info-wrap">
+            <img
+              class="reviews__img"
+              src="./img/home/reviews/josiah@1x.png"
+              alt="josiah"
+            />
+            <h2 class="reviews__name">Josiah Valdez</h2>
+          </div>
+          <p class="reviews__text">
+            I really enjoyed the Modern Physics course! ...
+          </p>
+        </div>
+        <div class="swiper-slide reviews__item">
+          <div class="reviews__info-wrap">
+            <picture>
+              <source
+                srcset="
+                  ./img/home/reviews/josiah@1x.png 1x,
+                  ./img/home/reviews/josiah@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/home/reviews/josiah@1x.webp 1x,
+                  ./img/home/reviews/josiah@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="reviews__img"
+                src="./img/home/reviews/josiah@1x.png"
+                alt="josiah"
+              />
+            </picture>
+            <h2 class="reviews__name">Josiah Valdez</h2>
+          </div>
+          <p class="reviews__text">
+            I really enjoyed the Modern Physics course! We studied relevant
+            topics such as quantum mechanics and relativity. Teachers explain
+            the material in a clear and accessible way, and laboratory work
+            helps to consolidate knowledge in practice. Thanks to this course, I
+            have broadened my understanding of physics and now have a better
+            understanding of modern scientific achievements.
+          </p>
+        </div>
+        <div class="swiper-slide reviews__item">
+          <div class="reviews__info-wrap">
+            <img
+              class="reviews__img"
+              src="./img/home/reviews/josiah@1x.png"
+              alt="josiah"
+            />
+            <h2 class="reviews__name">Josiah Valdez</h2>
+          </div>
+          <p class="reviews__text">
+            I really enjoyed the Modern Physics course! ...
+          </p>
+        </div>
+        <!-- Add more slides as necessary -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </section>
