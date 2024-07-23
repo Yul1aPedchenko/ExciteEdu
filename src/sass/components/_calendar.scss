@@ -1,10 +1,8 @@
 .calendar {
   margin-bottom: 60px;
-
   &__title {
     color: $titleColor;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
     line-height: 120.006%;
     margin-bottom: 25px;
@@ -16,10 +14,10 @@
     }
   }
 
-  &__containre {
+  &__container {
     border-radius: 8px;
     border: 1px solid rgba(17, 21, 24, 0.1);
-    background: #fff;
+    background: $secondaryTitleColor;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 390px;
     height: 534px;
@@ -43,7 +41,6 @@
     padding-left: 20px;
     color: $titleColor;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
     line-height: 38px;
     margin-bottom: 53px;
@@ -59,11 +56,10 @@
   &__text {
     color: $secondaryTextColor;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
     padding-left: 20px;
     margin-bottom: 52px;
-    line-height: 120.006%; /* 28.801px */
+    line-height: 120.006%;
   }
   @media screen and (min-width: 768px) {
     padding-left: 30px;
@@ -78,9 +74,7 @@
     background: $secondaryTitleColor;
     color: $accentColor;
     color: $accentColor;
-    font-family: Urbanist;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 19px;
     margin-left: 20px;
@@ -96,4 +90,29 @@
     background-color: $accentColor;
     color: $secondaryTitleColor;
   }
+}
+
+#calendarModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#calendar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+}
+.event-title {
+  color: $accentColor;
 }
