@@ -19,9 +19,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/mobile-menu-b8f6bd9a.js"></script>
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-a6899ea0.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/index-a7008dd6.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-e925d020.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-cdf9f8c1.css">
   </head>
   <body>
     <header class="header">
@@ -310,15 +318,95 @@
   </div>
 </section>
 
-    <section class="reviews">
+    <!-- <section class="reviews">
   <div class="container">
     <h2 class="reviews__title">Reviews</h2>
     <div class="reviews__wrap">
-      <svg class="reviews__icon">
-        <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-arrow-left"></use>
+      <svg id="prev" class="reviews__icon">
+        <use href="./img/symbol-defs.svg#icon-arrow-left"></use>
       </svg>
       <ul class="reviews__list">
         <li class="reviews__item">
+          <div class="reviews__info-wrap">
+            <picture>
+              <source
+                srcset="
+                  ./img/home/reviews/lilli@1x.png 1x,
+                  ./img/home/reviews/lilli@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/home/reviews/lilli@1x.webp 1x,
+                  ./img/home/reviews/lilli@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="reviews__img"
+                src="./img/home/reviews/lilli@1x.png"
+                alt="lilli"
+              />
+            </picture>
+            <h2 class="reviews__name">Lilli Glass</h2>
+          </div>
+          <p class="reviews__text">
+            I really liked the course "Middle school physics"! The teachers
+            explain the material perfectly, and the lessons are always
+            interesting and interactive. Most of all, I like the experiments we
+            do in class - they help us to better understand the theory. I also
+            learned a lot about how physics is applied in everyday life. This
+            course is not only useful, but also exciting!
+          </p>
+        </li>
+        <li class="reviews__item">
+          <div class="reviews__info-wrap">
+            <picture>
+              <source
+                srcset="
+                  ./img/home/reviews/josiah@1x.png 1x,
+                  ./img/home/reviews/josiah@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/home/reviews/josiah@1x.webp 1x,
+                  ./img/home/reviews/josiah@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="reviews__img"
+                src="./img/home/reviews/josiah@1x.png"
+                alt="josiah"
+              />
+            </picture>
+            <h2 class="reviews__name">Josiah Valdez</h2>
+          </div>
+          <p class="reviews__text">
+            I really enjoyed the Modern Physics course! We studied relevant
+            topics such as quantum mechanics and relativity. Teachers explain
+            the material in a clear and accessible way, and laboratory work
+            helps to consolidate knowledge in practice. Thanks to this course, I
+            have broadened my understanding of physics and now have a better
+            understanding of modern scientific achievements.
+          </p>
+        </li>
+      </ul>
+      <svg id="next" class="reviews__icon">
+        <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
+      </svg>
+    </div>
+  </div>
+</section> -->
+<section class="reviews">
+  <div class="container">
+    <h2 class="reviews__title">Reviews</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide reviews__item">
           <div class="reviews__info-wrap">
             <picture>
               <source
@@ -345,8 +433,21 @@
             learned a lot about how physics is applied in everyday life. This
             course is not only useful, but also exciting!
           </p>
-        </li>
-        <li class="reviews__item">
+        </div>
+        <div class="swiper-slide reviews__item">
+          <div class="reviews__info-wrap">
+            <img
+              class="reviews__img"
+              src="data:image/png;base64,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"
+              alt="josiah"
+            />
+            <h2 class="reviews__name">Josiah Valdez</h2>
+          </div>
+          <p class="reviews__text">
+            I really enjoyed the Modern Physics course! ...
+          </p>
+        </div>
+        <div class="swiper-slide reviews__item">
           <div class="reviews__info-wrap">
             <picture>
               <source
@@ -373,11 +474,27 @@
             have broadened my understanding of physics and now have a better
             understanding of modern scientific achievements.
           </p>
-        </li>
-      </ul>
-      <svg class="reviews__icon">
-        <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-arrow-right"></use>
-      </svg>
+        </div>
+        <div class="swiper-slide reviews__item">
+          <div class="reviews__info-wrap">
+            <img
+              class="reviews__img"
+              src="data:image/png;base64,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"
+              alt="josiah"
+            />
+            <h2 class="reviews__name">Josiah Valdez</h2>
+          </div>
+          <p class="reviews__text">
+            I really enjoyed the Modern Physics course! ...
+          </p>
+        </div>
+        <!-- Add more slides as necessary -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </section>
@@ -440,6 +557,7 @@
   </div>
 </footer>
 
+    
     
     
   </body>
