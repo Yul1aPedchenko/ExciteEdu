@@ -1,5 +1,6 @@
 .reviews {
   padding: 45px 0;
+  position: relative;
   &__title {
     font-weight: 700;
     font-size: 32px;
@@ -15,9 +16,14 @@
     stroke: $titleColor;
     width: 20px;
     height: 11px;
+    cursor: pointer;
   }
   &__list {
-    width: 310px;
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    width: 330px;
+    transition: transform 0.5s ease-in-out;
   }
   &__item {
     padding: 20px;
@@ -25,6 +31,12 @@
     border: 1px solid $borderColor;
     border-radius: 8px;
     max-width: 310px;
+    flex: 0 0 50%;
+    transition: transform 0.5s ease-in-out;
+    min-width: 0;
+  }
+  &__item.active {
+    display: block;
   }
   &__info-wrap {
     display: flex;
@@ -47,6 +59,9 @@
   .reviews__item:last-child {
     display: none;
   }
+  .reviews__item {
+    flex: 0 0 100%; /* На мобільних пристроях відображати один відгук */
+  }
 }
 @media screen and (min-width: 768px) {
   .reviews {
@@ -56,11 +71,10 @@
       margin-bottom: 35px;
     }
     &__list {
-      display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-     width: 650px;
+      width: 650px;
     }
     &__text {
       width: 270px;
@@ -75,11 +89,11 @@
       margin-bottom: 30px;
     }
     &__icon {
-        width: 30px;
-        height: 17px;
+      width: 30px;
+      height: 17px;
     }
     &__list {
-        width: 948px;
+      width: 948px;
     }
     &__item {
       height: 248px;
