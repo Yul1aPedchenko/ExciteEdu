@@ -14,47 +14,42 @@ document
       topic.topic.toLowerCase().includes(searchTerm)
     );
     currentIndex = 0;
-    document.getElementById('themes-list').innerHTML = '';
     loadMoreTopics(true);
   });
 
 function loadTopics() {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'src/json/topics.json', true);
-  xhr.onload = function () {
-    if (xhr.status === 200) {
-      topics = JSON.parse(xhr.responseText);
+  fetch('src/json/topics.json')
+    .then(response => response.json())
+    .then(data => {
+      topics = data;
       filteredTopics = topics;
       loadMoreTopics();
-    } else {
-      console.error('Failed to load topics');
-    }
-  };
-  xhr.onerror = function () {
-    console.error('Request error...');
-  };
-  xhr.send();
+    })
+    .catch(error => console.error('Failed to load topics', error));
 }
 
 function loadMoreTopics(reset = false) {
   if (reset) {
+    currentIndex = 0;
     document.getElementById('themes-list').innerHTML = '';
   }
+
   const list = document.getElementById('themes-list');
   const endIndex = Math.min(currentIndex + itemsPerPage, filteredTopics.length);
 
   for (let i = currentIndex; i < endIndex; i++) {
+    const topic = filteredTopics[i];
     const li = document.createElement('li');
     li.className = 'themes__item';
 
     const img = document.createElement('img');
-    img.src = filteredTopics[i].image; // Використання картинки з JSON
+    img.src = topic.image; // Ensure this is the correct path to your image
     img.alt = 'themes img';
     img.className = 'themes__img';
 
     const h2 = document.createElement('h2');
     h2.className = 'themes__title';
-    h2.textContent = filteredTopics[i].topic;
+    h2.textContent = topic.topic;
 
     const a = document.createElement('a');
     a.href = '#';
@@ -71,11 +66,8 @@ function loadMoreTopics(reset = false) {
 
   currentIndex = endIndex;
 
-  if (currentIndex >= filteredTopics.length) {
-    document.getElementById('load-more').style.display = 'none';
-  } else {
-    document.getElementById('load-more').style.display = 'block';
-  }
+  document.getElementById('load-more').style.display =
+    currentIndex >= filteredTopics.length ? 'none' : 'block';
 }
 
 function showSubtopics(event) {
