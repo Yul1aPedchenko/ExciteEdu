@@ -233,6 +233,102 @@ body {
     font-size: 20px;
   }
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.83, -0.08, 0.32, 1), visibility 250ms cubic-bezier(0.83, -0.08, 0.32, 1);
+  z-index: 998;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  min-width: 290px;
+  max-width: 290px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  padding: 20px 15px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 250ms cubic-bezier(0.83, -0.08, 0.32, 1);
+}
+.modal__box-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__icon-close {
+  stroke: #111518;
+  transition: fill 250ms ease-in-out;
+}
+.modal__icon-close:hover {
+  stroke: #FF8A1D;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  width: 163px;
+  margin: 0 auto;
+}
+.modal__label {
+  position: relative;
+}
+.modal__input {
+  padding: 12px 15px;
+  width: 260px;
+  height: 40px;
+}
+.modal__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  color: #111518;
+  opacity: 0.3;
+  height: 14px;
+}
+.modal__input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  color: #111518;
+  opacity: 0.3;
+  height: 14px;
+}
+.modal__icon {
+  stroke: #111518;
+  fill: #111518;
+}
+
 .hero {
   background-image: linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@1x.png);
   background-position: top center;
@@ -1923,25 +2019,69 @@ progress::-webkit-progress-value {
   }
 }
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 80px;
+  }
 }
 .footer__wrap {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
+  flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    padding-bottom: 40px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    padding-bottom: 50px;
+    flex-direction: row;
+  }
 }
 .footer__list {
   display: flex;
-  gap: 40px;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__list {
+    margin-top: 25px;
+  }
 }
 .footer__link {
   color: #111518;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 120.006%;
   transition: color 250ms ease-in-out;
+}
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    font-size: 24px;
+  }
+}
+.footer__tel {
+  display: flex;
+}
+.footer__tel::after {
+  content: "";
+  display: block;
+  background-image: url(../../img/line.jpg);
+  width: 1px;
+  height: 29px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .footer__link:hover {
   color: #FF8A1D;
@@ -1949,6 +2089,11 @@ progress::-webkit-progress-value {
 .footer__icon-inst {
   fill: #111518;
   transition: fill 250ms ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .footer__icon-inst {
+    margin-top: 25px;
+  }
 }
 .footer__icon-inst:hover {
   fill: #FF8A1D;
@@ -1960,11 +2105,32 @@ progress::-webkit-progress-value {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .footer__sublist {
+    row-gap: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__sublist {
+    flex-direction: row;
+  }
 }
 .footer__text {
   color: #fff;
-  font-size: 20px;
+  text-align: right;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 120.006%; /* 19.201px */
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
