@@ -147,6 +147,39 @@
           "videoLinks": []
         }
       ]
+    },
+    {
+      "topic": "Kinematics: Equal-variable rectilinear motion",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Non-uniform Motion",
+          "description": "Non-uniform motion is a type of motion in which the speed of an object changes...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Equal-variable rectilinear motion",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Non-uniform Motion",
+          "description": "Non-uniform motion is a type of motion in which the speed of an object changes...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Equal-variable rectilinear motion",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Non-uniform Motion",
+          "description": "Non-uniform motion is a type of motion in which the speed of an object changes...",
+          "videoLinks": []
+        }
+      ]
     }
   ]
 }
