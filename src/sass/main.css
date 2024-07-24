@@ -1819,6 +1819,109 @@ progress::-webkit-progress-value {
     width: 1110px;
   }
 }
+.themes__form {
+  position: relative;
+  max-width: 390px;
+  min-width: 390px;
+  margin-top: 25px;
+}
+.themes__input {
+  padding: 17px 26px;
+  padding-bottom: 16px;
+  border-radius: 30px;
+  max-width: 390px;
+  min-width: 390px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  height: 50px;
+  border: 1px solid rgba(17, 21, 24, 0.1);
+}
+.themes__btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  right: 26px;
+}
+.themes__icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #111518;
+}
+.themes__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  row-gap: 25px;
+}
+.themes__item {
+  width: 350px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid rgba(17, 21, 24, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  transition: border 1px 250ms ease-in-out;
+}
+.themes__item:hover {
+  border: 1px solid #FF8A1D;
+}
+.themes__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-top: 20px;
+}
+.themes__link {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #FF8A1D;
+  margin-top: 20px;
+  display: block;
+  transition: color 250ms ease-in-out;
+}
+.themes__link:hover {
+  color: rgba(255, 138, 29, 0.5);
+}
+.themes__btn-load {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 40px;
+  border-radius: 8px;
+  border: 1px solid #FF8A1D;
+  color: #FF8A1D;
+  background-color: #fff;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 30px;
+}
+.themes__btn-load:hover {
+  color: #fff;
+  background-color: #FF8A1D;
+}
+
+@media screen and (min-width: 768px) {
+  .themes__form {
+    max-width: 450px;
+    min-width: 450px;
+  }
+  .themes__input {
+    max-width: 450px;
+    min-width: 450px;
+  }
+  .themes__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+}
 .footer {
   margin-top: 100px;
 }

@@ -26,5 +26,8 @@
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.3704" d="M1.185 13.037v17.778l14.815-11.852 14.815 11.852v-17.778l-14.815-11.852-14.815 11.852z"></path>
 </symbol>
+<symbol id="icon-search" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M30.4 30.4l-9.6-9.6M1.6 12.8c0 6.186 5.014 11.2 11.2 11.2s11.2-5.014 11.2-11.2v0c0-6.186-5.014-11.2-11.2-11.2s-11.2 5.014-11.2 11.2v0z"></path>
+</symbol>
 </defs>
 </svg>

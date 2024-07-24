@@ -1,0 +1,152 @@
+{
+  "topics": [
+    {
+      "topic": "Definition of physics and its role in science",
+      "image": "./img/themes/physics.png",
+      "subtopics": [
+        {
+          "title": "The nature of light (wave nature)",
+          "description": "Introduction Observing the interaction of atoms...",
+          "videoLinks": [
+            "https://www.youtube.com/embed/IuIlvmzpS64",
+            "https://www.youtube.com/embed/DfQH3o6dKss",
+            "https://www.youtube.com/embed/C3q-IO_59Yk"
+          ]
+        },
+        {
+          "title": "Reflection of light",
+          "description": "When a ray of light approaches a smooth polished surface...",
+          "videoLinks": []
+        },
+        {
+          "title": "Refraction of light",
+          "description": "Refraction is an important term used in the Ray Optics branch of Physics...",
+          "videoLinks": []
+        },
+        {
+          "title": "Lenses, optical devices",
+          "description": "Optics is a branch of Physics – it’s the science that deals with light...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Basic physical quantities and units of measurement",
+      "image": "./img/themes/physics.png",
+      "subtopics": [
+        {
+          "title": "Length and Distance",
+          "description": "The measurement of length is one of the fundamental activities in science...",
+          "videoLinks": []
+        },
+        {
+          "title": "Mass and Weight",
+          "description": "Mass is a measure of the amount of matter in an object...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Methods of scientific investigation",
+      "image": "./img/themes/physics.png",
+      "subtopics": [
+        {
+          "title": "Scientific Method",
+          "description": "The scientific method is an empirical method for acquiring knowledge...",
+          "videoLinks": []
+        },
+        {
+          "title": "Experimental Design",
+          "description": "Designing experiments involves choosing methods...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Mechanical movement",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Linear Motion",
+          "description": "Linear motion is motion along a straight line...",
+          "videoLinks": []
+        },
+        {
+          "title": "Rotational Motion",
+          "description": "Rotational motion is motion around a central point...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Trajectory and movement vector",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Projectile Motion",
+          "description": "Projectile motion is a form of motion experienced by an object...",
+          "videoLinks": []
+        },
+        {
+          "title": "Vector Addition",
+          "description": "Vectors are quantities that have both a magnitude and a direction...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Velocity",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Average Velocity",
+          "description": "The average velocity of an object is defined as its total displacement...",
+          "videoLinks": []
+        },
+        {
+          "title": "Instantaneous Velocity",
+          "description": "Instantaneous velocity is the velocity of an object in motion at a specific point in time...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Acceleration",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Constant Acceleration",
+          "description": "Constant acceleration is a type of motion in which the velocity of an object changes by an equal amount in every equal time period...",
+          "videoLinks": []
+        },
+        {
+          "title": "Variable Acceleration",
+          "description": "Variable acceleration is a type of motion where the rate of change of velocity is not constant...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Uniform rectilinear motion",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Uniform Motion",
+          "description": "Uniform motion is a type of motion in which an object moves in a straight line with a constant speed...",
+          "videoLinks": []
+        }
+      ]
+    },
+    {
+      "topic": "Kinematics: Equal-variable rectilinear motion",
+      "image": "./img/themes/kinematics.png",
+      "subtopics": [
+        {
+          "title": "Non-uniform Motion",
+          "description": "Non-uniform motion is a type of motion in which the speed of an object changes...",
+          "videoLinks": []
+        }
+      ]
+    }
+  ]
+}
