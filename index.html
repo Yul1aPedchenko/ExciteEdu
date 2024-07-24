@@ -27,9 +27,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/index-03b8127b.js"></script>
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-629ba3e8.js">
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-405e5d5c.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/index-aefc2631.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-login-ee323d98.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/modal-login-405e5d5c.css">
   </head>
   <body>
     <header class="header">
@@ -37,7 +37,7 @@
     <div class="header__wrap">
       <a href="./index.html" class="header__logo">
         <svg class="header__icon">
-          <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-logo"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
         </svg>
       </a>
       <button
@@ -46,7 +46,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="menu__burger-icon" width="28" height="28">
-          <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-menu"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-menu"></use>
         </svg>
       </button>
       <nav class="header__nav">
@@ -64,7 +64,7 @@
       </nav>
       <ul class="header__btn-list">
         <li class="header__btn-item">
-          <button class="header__btn header__btn-login">Login</button>
+          <button class="header__btn header__btn-login" login-modal-open>Login</button>
         </li>
         <li class="header__btn-item">
           <button class="header__btn header__btn-sign">Sign Up</button>
@@ -77,12 +77,12 @@
   <div class="menu__wrap">
     <a href="./index.html" class="menu__logo">
       <svg class="menu__logo-icon">
-        <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-logo"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
       </svg>
     </a>
     <button class="menu-toggle js-close-menu">
       <svg class="menu__icon-close" width="40" height="40">
-        <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-close"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-close"></use>
       </svg>
     </button>
   </div>
@@ -100,12 +100,44 @@
     </ul>
     <ul class="menu__btn-list">
       <li class="menu__btn-item header__btn-item">
-        <button class="menu__btn header__btn header__btn-login">Login</button>
+        <button class="menu__btn header__btn header__btn-login" login-modal-open>Login</button>
       </li>
       <li class="menu__btn-item header__btn-item">
         <button class="menu__btn header__btn header__btn-sign">Sign Up</button>
       </li>
     </ul>
+  </div>
+</div>
+
+    <div class="container">
+  <div class="backdrop is-hidden" login-modal>
+    <div class="modal">
+      <div class="modal__box-close" login-modal-close>
+        <svg class="modal__icon-close" width="15" height="15">
+          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-close"></use>
+        </svg>
+      </div>
+      <div class="modal__wrap">
+        <h2 class="modal__title">Hello, Welcome Back!</h2>
+        <form class="modal__form">
+          <label class="modal__label">
+            <input class="modal__input" type="email" placeholder="E-mail" />
+          </label>
+          <label class="modal__label">
+            <input class="modal__input" type="password" placeholder="Password" />
+            <svg class="modal__icon" width="10" height="10">
+                <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-eye"></use>
+            </svg>
+          </label>
+          <a href="#" class="modal__forget">Forget password?</a>
+          <button class="modal__btn">Log in</button>
+          <p class="modal__text">
+            Don’t have an account?
+            <a href="#" class="modal__link">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -527,7 +559,7 @@
     <div class="footer__wrap">
       <a href="./index.html" class="footer__logo-link">
         <svg class="footer__icon-logo" width="150" height="60">
-          <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-logo"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
         </svg>
       </a>
       <ul class="footer__list">
@@ -540,7 +572,7 @@
       </ul>
       <a href="#" class="footer__inst-link">
         <svg class="footer__icon-inst" width="30" height="30">
-          <use href="/ExciteEdu/assets/symbol-defs-1e250183.svg#icon-instagram"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-instagram"></use>
         </svg>
       </a>
     </div>
@@ -561,6 +593,7 @@
   </div>
 </footer>
 
+    
     
     
     
