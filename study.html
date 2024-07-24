@@ -24,10 +24,10 @@
     />
     <script src="https://unpkg.com/fullcalendar@5.10.2/main.js"></script>
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/study-6898bd0a.js"></script>
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-a5367e2a.js">
+    <script type="module" crossorigin src="/ExciteEdu/assets/study-07f50d5a.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-677c95b5.js">
     <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-login-4079f8f5.js">
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-7f32b8a1.css">
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-c0de766b.css">
   </head>
   <body>
     <header class="header">
@@ -35,7 +35,7 @@
     <div class="header__wrap">
       <a href="./index.html" class="header__logo">
         <svg class="header__icon">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-logo"></use>
         </svg>
       </a>
       <button
@@ -44,7 +44,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="menu__burger-icon" width="28" height="28">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-menu"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-menu"></use>
         </svg>
       </button>
       <nav class="header__nav">
@@ -75,12 +75,12 @@
   <div class="menu__wrap">
     <a href="./index.html" class="menu__logo">
       <svg class="menu__logo-icon">
-        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-logo"></use>
       </svg>
     </a>
     <button class="menu-toggle js-close-menu">
       <svg class="menu__icon-close" width="40" height="40">
-        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-close"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
       </svg>
     </button>
   </div>
@@ -112,7 +112,7 @@
     <div class="modal">
       <div class="modal__box-close" login-modal-close>
         <svg class="modal__icon-close" width="15" height="15">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-close"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
         </svg>
       </div>
       <div class="modal__wrap">
@@ -124,7 +124,7 @@
           <label class="modal__label">
             <input class="modal__input" type="password" placeholder="Password" />
             <svg class="modal__icon" width="10" height="10">
-                <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-eye"></use>
+                <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
             </svg>
           </label>
           <a href="#" class="modal__forget">Forget password?</a>
@@ -169,30 +169,30 @@
     <section class="topic">
   <div class="container">
     <div class="topic__wrap">
-      <svg class="topic__icon">
-        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-arrow-left"></use>
+      <svg class="topic__icon" onclick="goBack()">
+        <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-arrow-left"></use>
       </svg>
       <ul class="topic__list">
         <li class="topic__item">
           <p class="topic__chapter">Thermal phenomena</p>
         </li>
         <li class="topic__item">
-          <p class="topic__chapter topic__chapter--active">Light and optics</p>
+          <p class="topic__chapter topic__chapter--active" id="main-topic">Light and optics</p>
         </li>
         <li class="topic__item">
           <p class="topic__chapter">Sound</p>
         </li>
       </ul>
-      <svg class="topic__icon">
-        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-arrow-right"></use>
+      <svg class="topic__icon" onclick="nextTopic()">
+        <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-arrow-right"></use>
       </svg>
     </div>
-    <ul class="topic__sublist">
+    <ul class="topic__sublist" id="subtopics-list">
       <li class="topic__box">
         <div class="topic__question">
           <p class="topic__theme">The nature of light (wave nature)</p>
           <svg class="topic__icon-arrow">
-            <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-arrow"></use>
+            <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-arrow"></use>
           </svg>
         </div>
         <div class="topic__answer">
@@ -252,7 +252,7 @@
         <div class="topic__question">
           <p class="topic__theme">Reflection of light</p>
           <svg class="topic__icon-arrow">
-            <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-arrow"></use>
+            <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-arrow"></use>
           </svg>
         </div>
         <div class="topic__answer">
@@ -274,7 +274,7 @@
         <div class="topic__question">
           <p class="topic__theme">Refraction of light</p>
           <svg class="topic__icon-arrow">
-            <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-arrow"></use>
+            <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-arrow"></use>
           </svg>
         </div>
         <div class="topic__answer">
@@ -303,7 +303,7 @@
         <div class="topic__question">
           <p class="topic__theme">Lenses, optical devices</p>
           <svg class="topic__icon-arrow">
-            <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-arrow"></use>
+            <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-arrow"></use>
           </svg>
         </div>
         <div class="topic__answer">
@@ -337,7 +337,7 @@
     <div class="footer__wrap">
       <a href="./index.html" class="footer__logo-link">
         <svg class="footer__icon-logo" width="150" height="60">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-logo"></use>
         </svg>
       </a>
       <ul class="footer__list">
@@ -350,7 +350,7 @@
       </ul>
       <a href="#" class="footer__inst-link">
         <svg class="footer__icon-inst" width="30" height="30">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-instagram"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-instagram"></use>
         </svg>
       </a>
     </div>
@@ -371,6 +371,7 @@
   </div>
 </footer>
 
+    
     
     
     

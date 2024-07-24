@@ -23,8 +23,9 @@
     />
     <script src="https://unpkg.com/fullcalendar@5.10.2/main.js"></script>
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/mobile-menu-a5367e2a.js"></script>
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-7f32b8a1.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/themes-14b7020d.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-677c95b5.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-c0de766b.css">
   </head>
   <body>
     <header class="header">
@@ -32,7 +33,7 @@
     <div class="header__wrap">
       <a href="./index.html" class="header__logo">
         <svg class="header__icon">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-logo"></use>
         </svg>
       </a>
       <button
@@ -41,7 +42,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="menu__burger-icon" width="28" height="28">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-menu"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-menu"></use>
         </svg>
       </button>
       <nav class="header__nav">
@@ -72,12 +73,12 @@
   <div class="menu__wrap">
     <a href="./index.html" class="menu__logo">
       <svg class="menu__logo-icon">
-        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-logo"></use>
       </svg>
     </a>
     <button class="menu-toggle js-close-menu">
       <svg class="menu__icon-close" width="40" height="40">
-        <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-close"></use>
+        <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
       </svg>
     </button>
   </div>
@@ -104,12 +105,72 @@
   </div>
 </div>
 
+    <section class="themes" id="themes-section">
+    <div class="container">
+        <form class="themes__form" id="search-form">
+            <input type="text" class="themes__input" placeholder="Enter a theme" id="search-input">
+            <button class="themes__btn" type="submit">
+                <svg class="themes__icon">
+                    <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+        <ul class="themes__list" id="themes-list">
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/physics-604cf7fa.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Definition of physics and its role in science</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/physics-604cf7fa.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Basic physical quantities and units of measurement</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/physics-604cf7fa.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Methods of scientific investigation</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Kinematics: Mechanical movement</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Kinematics: Trajectory and movement vector</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Kinematics: Velocity</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Kinematics: Acceleration</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Kinematics: Uniform rectilinear motion</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+            <li class="themes__item">
+                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
+                <h2 class="themes__title">Kinematics: Equal-variable rectilinear motion</h2>
+                <a href="#" class="themes__link">Start learn</a>
+            </li>
+        </ul>
+        <button class="themes__btn-load" id="load-more">Show more</button>
+    </div>
+</section>
     <footer class="footer" id="footer">
   <div class="container">
     <div class="footer__wrap">
       <a href="./index.html" class="footer__logo-link">
         <svg class="footer__icon-logo" width="150" height="60">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-logo"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-logo"></use>
         </svg>
       </a>
       <ul class="footer__list">
@@ -122,7 +183,7 @@
       </ul>
       <a href="#" class="footer__inst-link">
         <svg class="footer__icon-inst" width="30" height="30">
-          <use href="/ExciteEdu/assets/symbol-defs-313ac584.svg#icon-instagram"></use>
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-instagram"></use>
         </svg>
       </a>
     </div>
@@ -143,6 +204,7 @@
   </div>
 </footer>
 
+    
     
     
   </body>
