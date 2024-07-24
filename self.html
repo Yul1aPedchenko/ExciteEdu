@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/mobile-menu-e925d020.js"></script>
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-cdf9f8c1.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/mobile-menu-ebae1c3d.js"></script>
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-fa6d9dc1.css">
   </head>
   <body>
     <header class="header">
@@ -219,7 +219,7 @@
       We recommend additional useful resources for studying physics
     </p>
     <ul class="resources__list">
-      <li class="resources__item">
+      <li class="resources__item resources__item-course">
         <picture>
           <source
             srcset="
@@ -235,13 +235,21 @@
             "
             type="image/webp"
           />
-          <img src="./img/self/resources/ocw@1x.png" alt="MIT OpenCourseware" />
+          <img
+            class="resources__teg"
+            src="./img/self/resources/ocw@1x.png"
+            alt="MIT OpenCourseware"
+          />
         </picture>
         <h2 class="resources__subtitle">MIT OpenCourseware</h2>
         <p class="resources__subtext">
           Access to lectures and materials from physics courses taught at MIT.
         </p>
-        <a href="https://ocw.mit.edu/search/?d=Physics&s=department_course_numbers.sort_coursenum" class="resources__link">Follow the link</a>
+        <a
+          href="https://ocw.mit.edu/search/?d=Physics&s=department_course_numbers.sort_coursenum"
+          class="resources__link resources__link-course"
+          >Follow the link</a
+        >
       </li>
       <li class="resources__item">
         <picture>
@@ -260,6 +268,7 @@
             type="image/webp"
           />
           <img
+            class="resources__teg "
             src="./img/self/resources/khan-academy@1x.png"
             alt="khan academy logo"
           />
@@ -270,14 +279,11 @@
           online resource with physics lessons, exercises and tests for
           different levels.
         </p>
-        <a
-          href="https://www.youtube.com/user/khanacademy"
-          class="resources__link"
-          >Go to YouTube or
-          <a class="resources__link" href="https://www.khanacademy.org/science/physics">link</a></a
-        >
+        <a href="https://www.youtube.com/user/khanacademy"
+        class="resources__link resources__link-khan"
+        >Go to YouTube or link</a>
       </li>
-      <li class="resources__item">
+      <li class="resources__item resources__subitem-two">
         <picture>
           <source
             srcset="
@@ -294,6 +300,7 @@
             type="image/webp"
           />
           <img
+            class="resources__teg"
             src="./img/self/resources/minute-physics@1x.png"
             alt="minute physics logo"
           />
@@ -304,7 +311,7 @@
         </p>
         <a
           href="https://www.youtube.com/user/minutephysics"
-          class="resources__link"
+          class="resources__link resources__link-minute"
           >Go to YouTube</a
         >
       </li>
@@ -324,7 +331,11 @@
             "
             type="image/webp"
           />
-          <img src="./img/self/resources/num@1x.png" alt="Numberphile logo" />
+          <img
+            class="resources__teg"
+            src="./img/self/resources/num@1x.png"
+            alt="Numberphile logo"
+          />
         </picture>
         <h2 class="resources__subtitle">Numberphile</h2>
         <p class="resources__subtext">
@@ -332,12 +343,17 @@
         </p>
         <a
           href="https://www.youtube.com/user/numberphile"
-          class="resources__link"
-          >Go to YouTube or <a class="resources__link" href="https://www.numberphile.com/">link</a></a
+          class="resources__link resources__link-numberphile"
+          >Go to YouTube or
+          <a class="resources__link" href="https://www.numberphile.com/"
+            >link</a
+          ></a
         >
       </li>
     </ul>
+    <a href="#" class="resources__tab">
     <button type="button" class="resources__button">Show more</button>
+  </a>
   </div>
 </section>
 
