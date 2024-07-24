@@ -15,9 +15,8 @@
     }
   }
   &__text {
-    color: #b9b9b9;
+    color: $textColor;
     text-align: justify;
-    font-family: Urbanist;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -46,7 +45,7 @@
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 768px) {
-     display: none; 
+      display: none;
     }
   }
   &__tab {
@@ -60,6 +59,10 @@
     border: 1px solid $borderColor;
     background: $secondaryTitleColor;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: border 250ms ease-in-out;
+  }
+  &__item:hover {
+    border: 1px solid $accentColor;
   }
   &__teg {
     margin: 0 auto;
@@ -74,7 +77,7 @@
     }
   }
   &__subtitle {
-    color: #111518;
+    color: $titleColor;
     font-size: 20px;
     font-weight: 600;
     line-height: 120.006%;
@@ -97,8 +100,16 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 120.006%;
-    padding-left: 25px;
-    display: block;
+    margin-left: 25px;
+    display: inline-block;
+    transition: color 250ms ease-in-out;
+  }
+  &__link:hover {
+    color: $lesserAccentColor;
+  }
+  &__link-link {
+    display: inline-block;
+    margin-left: 5px;
   }
   &__link-course {
     margin-top: 65px;
@@ -117,8 +128,13 @@
     font-weight: 600;
     background: none;
     border-radius: 8px;
-    border: 1px solid #ff8a1d;
+    border: 1px solid $accentColor;
     padding: 10px 40px 10px 40px;
     margin-top: 60px;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  &__button:hover {
+    color: $secondaryTitleColor;
+    background-color: $accentColor;
   }
 }

@@ -1344,9 +1344,8 @@ progress::-webkit-progress-value {
   }
 }
 .resources__text {
-  color: #b9b9b9;
+  color: #B9B9B9;
   text-align: justify;
-  font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1397,6 +1396,10 @@ progress::-webkit-progress-value {
   border: 1px solid rgba(17, 21, 24, 0.1);
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: border 250ms ease-in-out;
+}
+.resources__item:hover {
+  border: 1px solid #FF8A1D;
 }
 .resources__teg {
   margin: 0 auto;
@@ -1436,8 +1439,16 @@ progress::-webkit-progress-value {
   font-size: 20px;
   font-weight: 500;
   line-height: 120.006%;
-  padding-left: 25px;
-  display: block;
+  margin-left: 25px;
+  display: inline-block;
+  transition: color 250ms ease-in-out;
+}
+.resources__link:hover {
+  color: rgba(255, 138, 29, 0.5);
+}
+.resources__link-link {
+  display: inline-block;
+  margin-left: 5px;
 }
 .resources__link-course {
   margin-top: 65px;
@@ -1456,9 +1467,14 @@ progress::-webkit-progress-value {
   font-weight: 600;
   background: none;
   border-radius: 8px;
-  border: 1px solid #ff8a1d;
+  border: 1px solid #FF8A1D;
   padding: 10px 40px 10px 40px;
   margin-top: 60px;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.resources__button:hover {
+  color: #fff;
+  background-color: #FF8A1D;
 }
 
 .remember {
@@ -1810,31 +1826,42 @@ progress::-webkit-progress-value {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
+  align-items: center;
 }
 .footer__list {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 .footer__link {
   color: #111518;
-  font-family: Urbanist;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 120.006%; /* 28.801px */
+  line-height: 120.006%;
+  transition: color 250ms ease-in-out;
+}
+.footer__link:hover {
+  color: #FF8A1D;
+}
+.footer__icon-inst {
+  fill: #111518;
+  transition: fill 250ms ease-in-out;
+}
+.footer__icon-inst:hover {
+  fill: #FF8A1D;
+}
+.footer__rights-wrap {
+  background-color: #111518;
 }
 .footer__sublist {
-  background: #111518;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer__text {
   color: #fff;
-  font-family: Urbanist;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }/*# sourceMappingURL=main.css.map */
