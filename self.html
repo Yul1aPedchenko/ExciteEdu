@@ -19,9 +19,9 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/mobile-menu-59bb9b49.js"></script>
+    <script type="module" crossorigin src="/ExciteEdu/assets/mobile-menu-3f46682a.js"></script>
     <script type="module" crossorigin src="/ExciteEdu/assets/modal-signup-eeaed08e.js"></script>
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-2e15aa07.css">
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-6b310325.css">
   </head>
   <body>
     <header class="header">
@@ -112,21 +112,31 @@
       <div class="modal__wrap">
         <h2 class="modal__title">Hello, Welcome Back!</h2>
         <form class="modal__form">
-          <label class="modal__label">
-            <input class="modal__input" type="email" placeholder="E-mail" />
-          </label>
-          <label class="modal__label">
-            <input class="modal__input" type="password" placeholder="Password" />
-            <svg class="modal__icon" width="10" height="10">
-                <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
-            </svg>
-          </label>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__label">
+                <input class="modal__input" type="email" placeholder="E-mail" />
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__label">
+                <input
+                  class="modal__input"
+                  type="password"
+                  placeholder="Password"
+                />
+                <svg class="modal__icon">
+                  <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye-off"></use>
+                </svg>
+              </label>
+            </li>
+          </ul>
           <a href="#" class="modal__forget">Forget password?</a>
           <button class="modal__btn">Log in</button>
-          <p class="modal__text">
+          <a href="#" class="modal__link">
             Don’t have an account?
-            <a href="#" class="modal__link">Sign up</a>
-          </p>
+            <p class="modal__text">Sign up</p>
+          </a>
         </form>
       </div>
     </div>
