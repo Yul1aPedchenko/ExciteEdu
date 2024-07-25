@@ -1,0 +1,57 @@
+.interests {
+  background-color: $lesserBgAccentColor;
+  padding: 20px 0;
+  &__title {
+    color: $titleColor;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 600;
+    line-height: 120%;
+    color: $secondaryTextColor;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    color: $secondaryTitleColor;
+    padding: 10px 40px;
+    background-color: $accentColor;
+    border-radius: 8px;
+    font-weight: 700;
+    line-height: 120%;
+    display: block;
+    max-width: 130px;
+    margin: 0 auto;
+    border: 1px solid $accentColor;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  &__btn:hover {
+    background-color: transparent;
+    color: $accentColor;
+  }
+}
+@media screen and (min-width: 768px) {
+  .interests {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title {
+      font-size: 36px;
+      text-align: left;
+    }
+    &__text {
+      font-size: 24px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    &__btn {
+        margin: 0;
+    }
+  }
+}
