@@ -22,10 +22,11 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/fullcalendar@5.10.2/main.js"></script>
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/themes-887ee7d7.js"></script>
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-677c95b5.js">
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-c0de766b.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/themes-9d1aa025.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-cf2bb36d.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-3c3d7780.css">
   </head>
   <body>
     <header class="header">
@@ -63,7 +64,7 @@
           <button class="header__btn header__btn-login" login-modal-open>Login</button>
         </li>
         <li class="header__btn-item">
-          <button class="header__btn header__btn-sign">Sign Up</button>
+          <button class="header__btn header__btn-sign" signup-modal-open>Sign Up</button>
         </li>
       </ul>
     </div>
@@ -108,14 +109,14 @@
     <section class="themes" id="themes-section">
     <div class="container">
         <form class="themes__form" id="search-form">
-            <input type="text" class="themes__input" placeholder="Enter a theme" id="search-input">
+            <input id="searchBar" type="text" class="themes__input" placeholder="Enter a theme">
             <button class="themes__btn" type="submit">
                 <svg class="themes__icon">
                     <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-search"></use>
                 </svg>
             </button>
         </form>
-        <ul class="themes__list" id="themes-list">
+        <ul class="themes__list" id="root">
             <li class="themes__item">
                 <img src="/ExciteEdu/assets/physics-604cf7fa.png" alt="themes img" class="themes__img">
                 <h2 class="themes__title">Definition of physics and its role in science</h2>
@@ -124,41 +125,6 @@
             <li class="themes__item">
                 <img src="/ExciteEdu/assets/physics-604cf7fa.png" alt="themes img" class="themes__img">
                 <h2 class="themes__title">Basic physical quantities and units of measurement</h2>
-                <a href="#" class="themes__link">Start learn</a>
-            </li>
-            <li class="themes__item">
-                <img src="/ExciteEdu/assets/physics-604cf7fa.png" alt="themes img" class="themes__img">
-                <h2 class="themes__title">Methods of scientific investigation</h2>
-                <a href="#" class="themes__link">Start learn</a>
-            </li>
-            <li class="themes__item">
-                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
-                <h2 class="themes__title">Kinematics: Mechanical movement</h2>
-                <a href="#" class="themes__link">Start learn</a>
-            </li>
-            <li class="themes__item">
-                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
-                <h2 class="themes__title">Kinematics: Trajectory and movement vector</h2>
-                <a href="#" class="themes__link">Start learn</a>
-            </li>
-            <li class="themes__item">
-                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
-                <h2 class="themes__title">Kinematics: Velocity</h2>
-                <a href="#" class="themes__link">Start learn</a>
-            </li>
-            <li class="themes__item">
-                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
-                <h2 class="themes__title">Kinematics: Acceleration</h2>
-                <a href="#" class="themes__link">Start learn</a>
-            </li>
-            <li class="themes__item">
-                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
-                <h2 class="themes__title">Kinematics: Uniform rectilinear motion</h2>
-                <a href="#" class="themes__link">Start learn</a>
-            </li>
-            <li class="themes__item">
-                <img src="/ExciteEdu/assets/kinematics-e1bb2c0e.png" alt="themes img" class="themes__img">
-                <h2 class="themes__title">Kinematics: Equal-variable rectilinear motion</h2>
                 <a href="#" class="themes__link">Start learn</a>
             </li>
         </ul>

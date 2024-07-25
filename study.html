@@ -24,10 +24,10 @@
     />
     <script src="https://unpkg.com/fullcalendar@5.10.2/main.js"></script>
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/study-07f50d5a.js"></script>
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-677c95b5.js">
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-login-4079f8f5.js">
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-c0de766b.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/study-c4c09a1a.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-cf2bb36d.js">
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-signup-eeaed08e.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-3c3d7780.css">
   </head>
   <body>
     <header class="header">
@@ -65,7 +65,7 @@
           <button class="header__btn header__btn-login" login-modal-open>Login</button>
         </li>
         <li class="header__btn-item">
-          <button class="header__btn header__btn-sign">Sign Up</button>
+          <button class="header__btn header__btn-sign" signup-modal-open>Sign Up</button>
         </li>
       </ul>
     </div>
@@ -139,6 +139,59 @@
   </div>
 </div>
 
+    <div class="container">
+    <div class="backdrop is-hidden" signup-modal>
+      <div class="signup">
+        <div classcontainre-close signup-modal-close class="signup__close">
+          <svg class="signup__icon-close" width="15" height="15">
+            <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="signup__wrap">
+          <h2 class="signup__title">Hello, Welcome!</h2>
+          <form class="signup__form">
+            <ul class="signup__list">
+                <div class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="text" placeholder="UserName" />
+            </label>
+          </div>
+              <div class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="email" placeholder="E-mail" />
+            </label>
+          </div>
+              <div class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="password" placeholder="Password" />
+              <svg class="signup__icon" width="10" height="10">
+                  <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
+              </svg>
+            </label>
+          </div>
+              <div class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="password" placeholder="Confirm Password" />
+              <svg class="signup__icon" width="10" height="10">
+                  <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
+              </svg>
+            </label>
+          </div>
+          </ul>
+          <div class="signup__containre">
+            <input class="signup__checkbox" type="checkbox">
+            <p class="signup__text">I Agree with <span class="signup__orange">privacy</span> and <span class="signup__orange">policy</span></p>
+          </div>
+            <button class="signup__button">Sign up</button>
+            <p class="signup__question">
+              Already have an account?
+              <a href="#" class="signup__link">Sign in</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
     <section class="calendar">
   <div class="container">
     <h2 class="calendar__title">Calendar</h2>
