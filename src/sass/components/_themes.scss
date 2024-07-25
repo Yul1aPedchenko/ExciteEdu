@@ -45,7 +45,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin: 0 auto;
-    transition: border 1px 250ms ease-in-out;
+    transition: border 250ms ease-in-out;
   }
   &__item:hover {
     border: 1px solid $accentColor;
@@ -55,6 +55,7 @@
     font-size: 20px;
     line-height: 120%;
     margin-top: 20px;
+    min-height: 48px;
   }
   &__link {
     font-weight: 600;
@@ -99,8 +100,20 @@
     &__list {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin-top: 50px;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 25px;
+    }
+    &__item {
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .themes {
+    &__list {
+      gap: 30px;
+      padding: 30px;
     }
   }
 }
