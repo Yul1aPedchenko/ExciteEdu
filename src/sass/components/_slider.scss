@@ -1,9 +1,9 @@
 .slider {
   overflow: hidden;
+  margin-bottom: 50px;
   &__slider-wrap {
     display: flex;
     position: relative;
-    // margin-top: 95px;
   }
   &__slider-wrap::before,
   &__slider-wrap::after {

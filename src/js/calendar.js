@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .map(event => `<span class="event-title">${event.title}</span>`)
         .join(', ');
       document.getElementById('lessonMessage').innerHTML =
-        'Or today you have scheduled: ' + eventTitles;
+        'For today you have scheduled: ' + eventTitles;
     } else {
       document.getElementById('lessonMessage').innerText =
         'You have no lessons scheduled for today';
