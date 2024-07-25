@@ -1,22 +1,54 @@
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 80px;
+  }
   &__wrap {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
+    flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 40px;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 50px;
+      flex-direction: row;
+    }
   }
   &__list {
     display: flex;
-    gap: 40px;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      margin-top: 25px;
+    }
   }
   &__link {
     color: $titleColor;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 120.006%;
     transition: color 250ms ease-in-out;
+    @media screen and (min-width: 1200px) {
+      font-size: 24px;
+    }
+  }
+  &__tel {
+    display: flex;
+  }
+  &__tel::after {
+    content: '';
+    display: block;
+    background-image: url(../../img/line.jpg);
+    width: 1px;
+    height: 29px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   &__link:hover {
     color: $accentColor;
@@ -24,6 +56,9 @@
   &__icon-inst {
     fill: $titleColor;
     transition: fill 250ms ease-in-out;
+    @media screen and (max-width: 768px) {
+      margin-top: 25px;
+    }
   }
   &__icon-inst:hover {
     fill: $accentColor;
@@ -35,12 +70,27 @@
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 768px) {
+      row-gap: 5px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
   }
   &__text {
-    color: $secondaryTitleColor;
-    font-size: 20px;
+    color: #fff;
+    text-align: right;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 600;
+    line-height: 120.006%; /* 19.201px */
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px; 
   }
 }

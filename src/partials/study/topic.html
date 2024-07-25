@@ -1,7 +1,7 @@
 <section class="topic">
   <div class="container">
     <div class="topic__wrap">
-      <svg class="topic__icon">
+      <svg class="topic__icon" onclick="goBack()">
         <use href="./img/symbol-defs.svg#icon-arrow-left"></use>
       </svg>
       <ul class="topic__list">
@@ -9,17 +9,17 @@
           <p class="topic__chapter">Thermal phenomena</p>
         </li>
         <li class="topic__item">
-          <p class="topic__chapter topic__chapter--active">Light and optics</p>
+          <p class="topic__chapter topic__chapter--active" id="main-topic">Light and optics</p>
         </li>
         <li class="topic__item">
           <p class="topic__chapter">Sound</p>
         </li>
       </ul>
-      <svg class="topic__icon">
+      <svg class="topic__icon" onclick="nextTopic()">
         <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
       </svg>
     </div>
-    <ul class="topic__sublist">
+    <ul class="topic__sublist" id="subtopics-list">
       <li class="topic__box">
         <div class="topic__question">
           <p class="topic__theme">The nature of light (wave nature)</p>
