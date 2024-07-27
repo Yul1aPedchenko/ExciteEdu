@@ -329,6 +329,62 @@ body {
   fill: #111518;
 }
 
+.interests {
+  background-color: rgba(255, 138, 29, 0.1);
+  padding: 20px 0;
+}
+.interests__title {
+  color: #111518;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.interests__text {
+  font-weight: 600;
+  line-height: 120%;
+  color: #5f5f5f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.interests__btn {
+  color: #fff;
+  padding: 10px 40px;
+  background-color: #FF8A1D;
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 120%;
+  display: block;
+  max-width: 130px;
+  margin: 0 auto;
+  border: 1px solid #FF8A1D;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.interests__btn:hover {
+  background-color: transparent;
+  color: #FF8A1D;
+}
+
+@media screen and (min-width: 768px) {
+  .interests__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .interests__title {
+    font-size: 36px;
+    text-align: left;
+  }
+  .interests__text {
+    font-size: 24px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .interests__btn {
+    margin: 0;
+  }
+}
 .hero {
   background-image: linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@1x.png);
   background-position: top center;
@@ -444,6 +500,7 @@ body {
 }
 .slider {
   overflow: hidden;
+  margin-bottom: 50px;
 }
 .slider__slider-wrap {
   display: flex;
@@ -532,7 +589,7 @@ body {
   }
 }
 .preferences {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .preferences__title {
   text-align: center;
@@ -1961,7 +2018,7 @@ progress::-webkit-progress-value {
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin: 0 auto;
-  transition: border 1px 250ms ease-in-out;
+  transition: border 250ms ease-in-out;
 }
 .themes__item:hover {
   border: 1px solid #FF8A1D;
@@ -1971,6 +2028,7 @@ progress::-webkit-progress-value {
   font-size: 20px;
   line-height: 120%;
   margin-top: 20px;
+  min-height: 48px;
 }
 .themes__link {
   font-weight: 600;
@@ -2014,8 +2072,18 @@ progress::-webkit-progress-value {
   .themes__list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 50px;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 25px;
+  }
+  .themes__item {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .themes__list {
+    gap: 30px;
+    padding: 30px;
   }
 }
 .footer {
