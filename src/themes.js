@@ -1,7 +1,7 @@
 const product = [
   {
     id: 0,
-    image: "./img/themes/physics-2.png",
+    image: './src/img/themes/physics-2.png',
     title: 'Definition of physics and its role in science',
   },
   {
