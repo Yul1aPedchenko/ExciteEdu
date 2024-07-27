@@ -1,52 +1,52 @@
 const product = [
   {
     id: 0,
-    image: './img/physics.png',
+    image: `${BASE_URL}/img/physics.png`,
     title: 'Definition of physics and its role in science',
   },
   {
     id: 1,
-    image: './img/physics.png',
+    image: `${BASE_URL}/img/physics.png`,
     title: 'Basic physical quantities and units of measurement',
   },
   {
     id: 2,
-    image: './img/physics.png',
+    image: `${BASE_URL}/img/physics.png`,
     title: 'Methods of scientific investigation',
   },
   {
     id: 3,
-    image: './img/kinematics.png',
+    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Mechanical movements',
   },
   {
     id: 4,
-    image: './img/kinematics.png',
+    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Trajectory and movement vector',
   },
   {
     id: 5,
-    image: './img/kinematics.png',
+    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Velocity',
   },
   {
     id: 6,
-    image: './img/kinematics.png',
+    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Acceleration',
   },
   {
     id: 7,
-    image: './img/kinematics.png',
+    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Uniform rectilinear motion',
   },
   {
     id: 8,
-    image: './img/kinematics.png',
+    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Equal-variable rectilinear motion',
   },
   {
     id: 9,
-    image: './img/dynamics.png',
+    image: `${BASE_URL}/img/dynamics.png`,
     title: 'Dynamics: Newton`s Laws',
   },
 ];
