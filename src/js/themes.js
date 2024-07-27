@@ -1,7 +1,7 @@
 const product = [
   {
     id: 0,
-    image: '../img/themes/physics.png',
+    image: './img/themes/physics.png',
     title: 'Definition of physics and its role in science',
   },
   {
@@ -70,7 +70,7 @@ const displayItem = (items, loadMore = false) => {
     .slice(0, currentItem)
     .map(item => {
       return `<li class="themes__item">
-                <img src=${item.image} alt="themes img" class="themes__img">
+                <img src='${item.image}' alt="themes img" class="themes__img">
                 <h2 class="themes__title">${item.title}</h2>
                 <a href="#" class="themes__link">Start learn</a>
               </li>`;
