@@ -93,29 +93,30 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
     }
-  }
-  &__label {
-    display: flex;
+
   }
 
-  &__border {
+  &__border{
     flex-basis: calc((100% - 15px) / 1);
-    max-width: 338px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 18px) / 2);
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    height: 40px;
+
+  }
+  &__input {
+    padding-left: 15px;
     width: 100%;
     height: 40px;
     border-radius: 5px;
     border: solid 1px black;
     padding-right: 15px;
-    @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 18px) / 2);
-    }
-  }
-  &__input {
-    border-radius: 5px;
-    padding: 12px 15px;
-    width: 100%;
-    height: 38px;
-    border: none;
+
   }
   &__input:hover {
     border: none;
@@ -128,8 +129,9 @@
     height: 14px;
   }
   &__icon {
-    margin-top: auto;
-    margin-bottom: auto;
+    position: absolute;
+    top: 13px;
+    right: 15px;
     width: 15px;
     height: 15px;
     stroke: $titleColor;
@@ -163,8 +165,13 @@
     border-radius: 4px;
     background: $accentColor;
     border: 1px solid $accentColor;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
     display: block;
     margin: 0 auto;
+  }
+  &__button:hover {
+    background-color: $secondaryTitleColor;
+    color: $accentColor;
   }
   &__question {
     display: block;
