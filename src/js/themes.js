@@ -1,12 +1,12 @@
 const product = [
   {
     id: 0,
-    image: 'img/themes/physics.jpg',
+    image: 'img/home/hero/team-desktop@1x.png',
     title: 'Definition of physics and its role in science',
   },
   {
     id: 1,
-    image: './img/themes/physics.jpg',
+    image: './img/home/hero/team-desktop@1x.png',
     title: 'Basic physical quantities and units of measurement',
   },
   {
