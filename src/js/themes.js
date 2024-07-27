@@ -43,7 +43,6 @@ const product = [
     id: 8,
     image: './img/kinematics.png',
     title: 'kinematics: Equal-variable rectilinear motion',
-    text: 'Types of movement: uniform and equally accelerated.',
   },
   {
     id: 9,
@@ -59,7 +58,7 @@ document.getElementById('searchBar').addEventListener('keyup', e => {
   const filteredData = categories.filter(item => {
     return item.title.toLowerCase().includes(searchData);
   });
-  currentItem = 3; // Reset current item count for new search
+  currentItem = 3;
   displayItem(filteredData);
 });
 
