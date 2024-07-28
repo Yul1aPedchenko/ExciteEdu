@@ -447,42 +447,7 @@ body {
   background-color: transparent;
   color: #FF8A1D;
 }
-.interests {
-  background-color: rgba(255, 138, 29, 0.1);
-  padding: 20px 0;
-}
-.interests__title {
-  color: #111518;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 120%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.interests__text {
-  font-weight: 600;
-  line-height: 120%;
-  color: #5f5f5f;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.interests__btn {
-  color: #fff;
-  padding: 10px 40px;
-  background-color: #FF8A1D;
-  border-radius: 8px;
-  font-weight: 700;
-  line-height: 120%;
-  display: block;
-  max-width: 130px;
-  margin: 0 auto;
-  border: 1px solid #FF8A1D;
-  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-}
-.interests__btn:hover {
-  background-color: transparent;
-  color: #FF8A1D;
-}
+
 @media screen and (min-width: 768px) {
   .interests__wrap {
     display: flex;
