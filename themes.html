@@ -23,9 +23,9 @@
     />
     <script src="https://unpkg.com/fullcalendar@5.10.2/main.js"></script>
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/themes-bcffd9bf.js"></script>
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/mobile-menu-1c3f592d.js">
-    <link rel="stylesheet" href="/ExciteEdu/assets/mobile-menu-86f3c2eb.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/themes-a50d4963.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-signup-89765b79.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/modal-signup-86f3c2eb.css">
   </head>
   <body>
     <header class="header">
@@ -130,7 +130,7 @@
         <h2 class="themes__title">
           Definition of physics and its role in science
         </h2>
-        <a href="#" class="themes__link">Start learn</a>
+        <a href="./study.html" class="themes__link">Start learn</a>
       </li>
       <li class="themes__item">
         <img
@@ -141,7 +141,7 @@
         <h2 class="themes__title">
           Basic physical quantities and units of measurement
         </h2>
-        <a href="#" class="themes__link">Start learn</a>
+        <a href="./study.html" class="themes__link">Start learn</a>
       </li>
     </ul>
     <button class="themes__btn-load" id="load-more">Show more</button>
@@ -187,6 +187,103 @@
   </div>
 </footer>
 
+    <div class="container">
+  <div class="backdrop is-hidden" login-modal>
+    <div class="modal">
+      <div class="modal__box-close" login-modal-close>
+        <svg class="modal__icon-close" width="15" height="15">
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
+        </svg>
+      </div>
+      <div class="modal__wrap">
+        <h2 class="modal__title">Hello, Welcome Back!</h2>
+        <form class="modal__form">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__label">
+                <input class="modal__input" type="email" placeholder="E-mail" />
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__label">
+                <input
+                  class="modal__input"
+                  type="password"
+                  placeholder="Password"
+                />
+                <svg class="modal__icon">
+                  <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye-off"></use>
+                </svg>
+              </label>
+            </li>
+          </ul>
+          <a href="#" class="modal__forget">Forget password?</a>
+          <button class="modal__btn">Log in</button>
+          <a href="#" class="modal__link">
+            Don’t have an account?
+            <p class="modal__text">Sign up</p>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+    <div class="backdrop is-hidden" signup-modal>
+      <div class="signup">
+        <div classcontainre-close signup-modal-close class="signup__close">
+          <svg class="signup__icon-close" width="15" height="15">
+            <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="signup__wrap">
+          <h2 class="signup__title">Hello, Welcome!</h2>
+          <form class="signup__form">
+            <ul class="signup__list">
+                <li class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="text" placeholder="UserName" />
+            </label>
+          </li>
+              <li class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="email" placeholder="E-mail" />
+            </label>
+          </li>
+              <li class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="password" placeholder="Password" />
+              <svg class="signup__icon" width="10" height="10">
+                  <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
+              </svg>
+            </label>
+          </li>
+              <li class="signup__border">
+            <label class="signup__label">
+              <input class="signup__input" type="password" placeholder="Confirm Password" />
+              <svg class="signup__icon" width="10" height="10">
+                  <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
+              </svg>
+            </label>
+          </li>
+          </ul>
+          <div class="signup__containre">
+            <input class="signup__checkbox" type="checkbox">
+            <p class="signup__text">I Agree with <span class="signup__orange">privacy</span> and <span class="signup__orange">policy</span></p>
+          </div>
+            <button class="signup__button">Sign up</button>
+            <p class="signup__question">
+              Already have an account?
+              <a href="#" class="signup__link">Sign in</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
     
     
     
