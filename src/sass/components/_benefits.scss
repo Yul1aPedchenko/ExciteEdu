@@ -85,6 +85,7 @@
     margin: 0 auto;
     padding: 15px 25px;
     transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    width: 269px;
   }
   &__button:hover {
     background-color: $secondaryTitleColor;

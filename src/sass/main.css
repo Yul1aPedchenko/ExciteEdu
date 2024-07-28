@@ -447,42 +447,7 @@ body {
   background-color: transparent;
   color: #FF8A1D;
 }
-.interests {
-  background-color: rgba(255, 138, 29, 0.1);
-  padding: 20px 0;
-}
-.interests__title {
-  color: #111518;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 120%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.interests__text {
-  font-weight: 600;
-  line-height: 120%;
-  color: #5f5f5f;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.interests__btn {
-  color: #fff;
-  padding: 10px 40px;
-  background-color: #FF8A1D;
-  border-radius: 8px;
-  font-weight: 700;
-  line-height: 120%;
-  display: block;
-  max-width: 130px;
-  margin: 0 auto;
-  border: 1px solid #FF8A1D;
-  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-}
-.interests__btn:hover {
-  background-color: transparent;
-  color: #FF8A1D;
-}
+
 @media screen and (min-width: 768px) {
   .interests__wrap {
     display: flex;
@@ -530,6 +495,7 @@ body {
   border: 1px solid #FF8A1D;
   margin: 0 auto;
   display: flex;
+  width: 194px;
   transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 .hero__btn:hover {
@@ -775,6 +741,8 @@ body {
   font-size: 16px;
   font-weight: 700;
   border: 1px solid #FF8A1D;
+  display: flex;
+  max-width: 202px;
 }
 @media screen and (min-width: 768px) {
   .preferences__button {
@@ -906,6 +874,7 @@ body {
   margin: 0 auto;
   padding: 15px 25px;
   transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  width: 269px;
 }
 .benefits__button:hover {
   background-color: #fff;
@@ -1619,7 +1588,7 @@ progress::-webkit-progress-value {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120.006%; /* 19.201px */
+  line-height: 120.006%;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1676,12 +1645,12 @@ progress::-webkit-progress-value {
   padding-top: 25px;
   margin-bottom: 35px;
 }
-.resources__subitem {
+.resources__item:nth-child(2n) {
   display: none;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .resources__subitem {
+@media screen and (min-width: 1200px) {
+  .resources__item:nth-child(2) {
     display: flex;
   }
 }
@@ -1700,9 +1669,7 @@ progress::-webkit-progress-value {
   line-height: 120.006%;
   padding-left: 25px;
   max-width: 250px;
-}
-.resources__subtext:first-child {
-  margin-bottom: 73px;
+  height: 95px;
 }
 .resources__link {
   color: #FF8A1D;
@@ -1717,18 +1684,7 @@ progress::-webkit-progress-value {
   color: rgba(255, 138, 29, 0.5);
 }
 .resources__link-link {
-  display: inline-block;
-  margin-left: 5px;
-}
-.resources__link-course {
-  margin-top: 65px;
-  padding-bottom: 25px;
-}
-.resources__link-minute {
-  margin-top: 73px;
-}
-.resources__link-khan {
-  margin-top: 16px;
+  margin-left: 0;
 }
 .resources__button {
   color: #FF8A1D;
@@ -1739,12 +1695,31 @@ progress::-webkit-progress-value {
   border-radius: 8px;
   border: 1px solid #FF8A1D;
   padding: 10px 40px 10px 40px;
+  display: flex;
+  margin: 0 auto;
   margin-top: 60px;
   transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 .resources__button:hover {
   color: #fff;
   background-color: #FF8A1D;
+}
+
+.resources__item {
+  display: none;
+}
+
+.resources__item:nth-child(-n+2) {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .resources__item:nth-child(-n+3) {
+    display: block;
+  }
+}
+.hidden {
+  display: none;
 }
 
 .remember {

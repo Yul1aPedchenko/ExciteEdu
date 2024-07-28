@@ -25,6 +25,7 @@
     border: 1px solid $accentColor;
     margin: 0 auto;
     display: flex;
+    width: 194px;
     transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   }
   &__btn:hover {
