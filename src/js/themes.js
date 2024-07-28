@@ -1,52 +1,42 @@
 const product = [
   {
     id: 0,
-    image: `${BASE_URL}/img/physics.png`,
     title: 'Definition of physics and its role in science',
   },
   {
     id: 1,
-    image: `${BASE_URL}/img/physics.png`,
     title: 'Basic physical quantities and units of measurement',
   },
   {
     id: 2,
-    image: `${BASE_URL}/img/physics.png`,
     title: 'Methods of scientific investigation',
   },
   {
     id: 3,
-    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Mechanical movements',
   },
   {
     id: 4,
-    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Trajectory and movement vector',
   },
   {
     id: 5,
-    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Velocity',
   },
   {
     id: 6,
-    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Acceleration',
   },
   {
     id: 7,
-    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Uniform rectilinear motion',
   },
   {
     id: 8,
-    image: `${BASE_URL}/img/kinematics.png`,
     title: 'kinematics: Equal-variable rectilinear motion',
   },
   {
     id: 9,
-    image: `${BASE_URL}/img/dynamics.png`,
     title: 'Dynamics: Newton`s Laws',
   },
 ];
@@ -69,9 +59,9 @@ const displayItem = (items, loadMore = false) => {
     .slice(0, currentItem)
     .map(item => {
       return `<li class="themes__item">
-                <img src=${item.image} alt="themes img" class="themes__img">
+                <img src="./img/physics.png" alt="themes img" class="themes__img">
                 <h2 class="themes__title">${item.title}</h2>
-                <a href="#" class="themes__link">Start learn</a>
+                <a href="./study.html" class="themes__link">Start learn</a>
               </li>`;
     })
     .join('');
