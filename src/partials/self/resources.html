@@ -65,18 +65,20 @@
           online resource with physics lessons, exercises and tests for
           different levels.
         </p>
-        <a
-          href="https://www.youtube.com/user/khanacademy"
-          class="resources__link resources__link-khan"
-          >Go to YouTube or
+        <div class="resources__link-wrap">
+          <a
+            href="https://www.youtube.com/user/khanacademy"
+            class="resources__link resources__link-numberphile"
+            >Go to YouTube or</a
+          >
           <a
             class="resources__link resources__link-link"
             href="https://www.khanacademy.org/science/physics"
             >link</a
-          ></a
-        >
+          >
+        </div>
       </li>
-      <li class="resources__item resources__subitem-two">
+      <li class="resources__item hidden">
         <picture>
           <source
             srcset="
@@ -108,7 +110,7 @@
           >Go to YouTube</a
         >
       </li>
-      <li class="resources__item resources__subitem">
+      <li class="resources__item hidden">
         <picture>
           <source
             srcset="
@@ -134,18 +136,20 @@
         <p class="resources__subtext">
           Videos that explore various mathematical concepts relevant to physics.
         </p>
-        <a
-          href="https://www.youtube.com/user/numberphile"
-          class="resources__link resources__link-numberphile"
-          >Go to YouTube or
-          <a class="resources__link" href="https://www.numberphile.com/"
+        <div class="resources__link-wrap">
+          <a
+            href="https://www.youtube.com/user/numberphile"
+            class="resources__link resources__link-numberphile"
+            >Go to YouTube or</a
+          >
+          <a class="resources__link resources__link-link" href="https://www.numberphile.com/"
             >link</a
-          ></a
-        >
+          >
+        </div>
       </li>
     </ul>
-    <a href="#" class="resources__tab">
-      <button type="button" class="resources__button">Show more</button>
-    </a>
+    <button type="button" class="resources__button" id="load-more">
+      Show more
+    </button>
   </div>
 </section>
