@@ -70,21 +70,11 @@
     color: $lesserAccentColor;
   }
   &__btn-load {
-    font-weight: 600;
-    font-size: 20px;
-    padding: 10px 40px;
-    border-radius: 8px;
-    border: 1px solid $accentColor;
-    color: $accentColor;
-    background-color: $secondaryTitleColor;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    @include btn();
+    width: 185px;
+    text-align: center;
     margin: 0 auto;
-    display: flex;
     margin-top: 30px;
-  }
-  &__btn-load:hover {
-    color: $secondaryTitleColor;
-    background-color: $accentColor;
   }
 }
 @media screen and (min-width: 768px) {

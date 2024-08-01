@@ -2,10 +2,7 @@
   padding: 45px 0;
   position: relative;
   &__title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 120%;
-    margin-bottom: 25px;
+    @include title();
   }
   &__wrap {
     display: flex;
@@ -60,18 +57,13 @@
     display: none;
   }
   .reviews__item {
-    flex: 0 0 100%; /* На мобільних пристроях відображати один відгук */
+    flex: 0 0 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .reviews {
     padding: 80px 0;
-    &__title {
-      font-size: 36px;
-      margin-bottom: 35px;
-    }
     &__list {
-      // flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       width: 650px;
@@ -84,10 +76,6 @@
 @media screen and (min-width: 1200px) {
   .reviews {
     padding: 100px 0;
-    &__title {
-      font-size: 40px;
-      margin-bottom: 30px;
-    }
     &__icon {
       width: 30px;
       height: 17px;

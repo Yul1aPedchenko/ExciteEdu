@@ -1,13 +1,8 @@
 .preferences {
   margin-top: 50px;
   &__title {
+    @include title();
     text-align: center;
-    color: $titleColor;
-    font-size: 32px;
-    font-weight: 700;
-    @media screen and (min-width: 768px) {
-      font-size: 40px;
-    }
   }
   &__span {
     color: $accentColor;
@@ -32,6 +27,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
+    min-height: 55px;
     @media screen and (min-width: 768px) and (max-width: 1200px) {
       font-size: 16px;
     }
@@ -48,24 +44,10 @@
     }
   }
   &__button {
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-    padding: 10px 48px;
-    border-radius: 8px;
-    background-color: $accentColor;
-    border: none;
-    color: $secondaryTitleColor;
-    font-size: 16px;
-    font-weight: 700;
-    border: 1px solid $accentColor;
-    display: flex;
+    @include accent-btn();
+    margin: 0;
     max-width: 202px;
-    @media screen and (min-width: 768px){
-      padding: 10px 60px;
-    }
-  }
-  &__button:hover {
-    color: $accentColor;
-    background-color: $secondaryTitleColor;
+    text-align: center;
   }
   &__list {
     display: flex;

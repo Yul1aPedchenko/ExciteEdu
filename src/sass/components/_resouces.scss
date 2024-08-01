@@ -1,24 +1,13 @@
 .resources {
   padding-top: 80px;
   &__title {
-    color: $titleColor;
-    font-weight: 700;
-    line-height: 120.006%;
+    @include title();
     margin-bottom: 10px;
-    font-size: 32px;
-    font-style: normal;
-    @media screen and (min-width: 768px) {
-      font-size: 36px;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 40px;
-    }
   }
   &__text {
     color: $textColor;
     text-align: justify;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 120.006%;
     margin-bottom: 40px;
@@ -95,6 +84,9 @@
     max-width: 250px;
     height: 95px;
   }
+  &__link-wrap {
+    margin-top: 15px;
+  }
   &__link {
     color: $accentColor;
     font-size: 20px;
@@ -111,22 +103,9 @@
     margin-left: 0;
   }
   &__button {
-    color: $accentColor;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    background: none;
-    border-radius: 8px;
-    border: 1px solid $accentColor;
-    padding: 10px 40px 10px 40px;
-    display: flex;
+    @include btn();
     margin: 0 auto;
     margin-top: 60px;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-  }
-  &__button:hover {
-    color: $secondaryTitleColor;
-    background-color: $accentColor;
   }
 }
 .resources__item {

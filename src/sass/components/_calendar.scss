@@ -1,19 +1,9 @@
 .calendar {
   margin-bottom: 60px;
   &__title {
-    color: $titleColor;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 120.006%;
-    margin-bottom: 25px;
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 20px;
-      font-size: 40px;
-    }
+    @include title();
+    margin-top: 20px;
   }
-
   &__container {
     border-radius: 8px;
     border: 1px solid rgba(17, 21, 24, 0.1);
@@ -35,7 +25,6 @@
       height: 300px;
     }
   }
-
   &__data {
     padding-top: 20px;
     padding-left: 20px;
@@ -52,7 +41,6 @@
     @media screen and (min-width: 1200px) {
     }
   }
-
   &__text {
     color: $secondaryTextColor;
     font-size: 24px;
@@ -65,30 +53,14 @@
     padding-left: 30px;
     margin-bottom: 67px;
   }
-
   &__button {
-    width: 315px;
-    height: 39px;
-    border-radius: 8px;
-    border: 1px solid $accentColor;
-    background: $secondaryTitleColor;
-    color: $accentColor;
-    color: $accentColor;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
+    @include btn();
     margin-left: 20px;
     margin-bottom: 20px;
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
     @media screen and (min-width: 768px) {
       margin-left: 30px;
       margin-bottom: 30px;
     }
-  }
-
-  &__button:hover {
-    background-color: $accentColor;
-    color: $secondaryTitleColor;
   }
 }
 

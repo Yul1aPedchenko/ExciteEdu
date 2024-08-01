@@ -16,20 +16,9 @@
     color: $accentColor;
   }
   &__btn {
-    font-weight: 700;
-    border-radius: 8px;
-    background-color: $accentColor;
-    color: $secondaryTitleColor;
-    padding: 16px 56px;
-    border: none;
-    border: 1px solid $accentColor;
-    margin: 0 auto;
-    display: flex;
-    width: 194px;
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-  }
-  &__btn:hover {
-    background-color: transparent;
+    @include accent-btn();
+    width: 192px;
+    text-align: center;
   }
 }
 @supports (background-image:linear-gradient(180deg, rgba(217, 217, 217, 0) 62.45%, #fff 100%), url(../img/home/hero/team-mobile@1x.webp)) {
@@ -67,10 +56,7 @@
       width: 420px;
     }
     &__btn {
-      margin: 0px;
-    }
-    &__btn:hover {
-      color: $accentColor;
+      margin: 0;
     }
   }
   @supports (background-image: url(../img/home/hero/team-tablet@1x.webp)) {

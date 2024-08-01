@@ -42,7 +42,7 @@
     min-height: 357px;
   }
 
-  &__box-close {
+  &__close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -55,14 +55,7 @@
     justify-content: center;
     align-items: center;
   }
-
-  &__close {
-    display: block;
-    margin-left: auto;
-  }
   &__icon-close {
-    width: 10px;
-    height: 10px;
     stroke: $titleColor;
     transition: fill 250ms ease-in-out;
   }
@@ -93,10 +86,9 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
     }
-
   }
 
-  &__border{
+  &__border {
     flex-basis: calc((100% - 15px) / 1);
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 18px) / 2);
@@ -107,7 +99,6 @@
     position: relative;
     display: flex;
     height: 40px;
-
   }
   &__input {
     padding-left: 15px;
@@ -116,7 +107,6 @@
     border-radius: 5px;
     border: solid 1px black;
     padding-right: 15px;
-
   }
   &__input:hover {
     border: none;
@@ -157,21 +147,11 @@
   }
   &__button {
     width: 150px;
-    height: 30px;
-    color: $secondaryTitleColor;
-    font-size: 17px;
-    font-weight: 700;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: $accentColor;
-    border: 1px solid $accentColor;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-    display: block;
-    margin: 0 auto;
-  }
-  &__button:hover {
-    background-color: $secondaryTitleColor;
-    color: $accentColor;
+    @include accent-btn();
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+    }
+    margin-bottom: 25px;
   }
   &__question {
     display: block;

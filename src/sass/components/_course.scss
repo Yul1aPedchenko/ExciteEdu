@@ -49,20 +49,8 @@
     margin-bottom: 40px;
   }
   &__btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 120%;
-    color: $accentColor;
-    border: 1px solid $accentColor;
-    padding: 9px 24px;
-    border-radius: 8px;
-    display: block;
+    @include btn();
     width: 205px;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-  }
-  &__btn:hover {
-    background-color: $accentColor;
-    color: $secondaryTitleColor;
   }
   &__img {
     order: -1;
