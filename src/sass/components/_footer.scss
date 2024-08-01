@@ -18,7 +18,6 @@
     }
     @media screen and (min-width: 1200px) {
       padding-bottom: 50px;
-      flex-direction: row;
     }
   }
   &__list {
@@ -40,11 +39,12 @@
   }
   &__tel {
     display: flex;
+    align-items: center;
   }
   &__tel::after {
     content: '';
     display: block;
-    background-image: url(../../img/line.jpg);
+    background-color: $accentColor;
     width: 1px;
     height: 29px;
     margin-left: 20px;

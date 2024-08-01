@@ -88,28 +88,12 @@
     margin-right: 20px;
   }
   &__btn {
+    @include accent-btn();
     padding: 10px 36px;
-    border: 1px solid $accentColor;
-    color: $secondaryTitleColor;
-    background-color: $accentColor;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 120%;
-    border-radius: 8px;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-  }
-  &__btn:hover {
-    background-color: transparent;
-    color: $accentColor;
+    font-size: 16px
   }
   &__btn-login {
-    padding: 10px 43px;
-    background-color: transparent;
-    color: $accentColor;
-  }
-  &__btn-login:hover {
-    background-color: $accentColor;
-    color: $secondaryTitleColor;
+    @include btn();
   }
 }
 @media screen and (min-width: 768px) {
@@ -139,6 +123,7 @@
     }
     &__btn-list {
       display: flex;
+      align-items: center;
     }
   }
 }

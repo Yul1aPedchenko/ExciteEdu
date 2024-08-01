@@ -109,21 +109,8 @@
     margin-top: 10px;
   }
   &__btn {
-    display: block;
-    margin: 0 auto;
-    color: $secondaryTitleColor;
-    font-size: 17px;
-    font-weight: 700;
-    border-radius: 8px;
-    background: $accentColor;
-    border: 1px solid $accentColor;
-    padding: 7px 54px;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    @include accent-btn();
     margin-bottom: 25px;
-  }
-  &__btn:hover {
-    background-color: $secondaryTitleColor;
-    color: $accentColor;
   }
   &__link {
     font-weight: 400;
@@ -153,6 +140,10 @@
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 515px;
+    &__btn {
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
     &__title {
       margin-bottom: 25px;
     }

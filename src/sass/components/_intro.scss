@@ -44,18 +44,14 @@
     }
   }
   &__text {
-    color: $titleColor;
-    font-size: 36px;
-    font-weight: 900;
+    @include title();
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
       font-size: 40px;
-      margin-bottom: 45px;
       max-width: 451px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 64px;
-      margin-bottom: 35px;
       max-width: 725px;
     }
   }
@@ -71,23 +67,9 @@
     }
   }
   &__button {
-    padding: 15px 40px;
-    border-radius: 8px;
-    background-color: $accentColor;
-    color: $secondaryTitleColor;
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    width: 275px;
-    margin: 0 auto;
-    border: 1px solid $accentColor;
-    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
-    @media screen and (min-width: 768px) {
-      margin: 0;
-    }
-  }
-  &__button:hover {
-    color: $accentColor;
-    background-color: $secondaryTitleColor;
+    @include accent-btn();
+    width: 300px;
+    text-align: center;
+    margin: 0;
   }
 }
