@@ -13,31 +13,91 @@ const product = [
   },
   {
     id: 3,
-    title: 'kinematics: Mechanical movements',
+    title: 'Kinematics: Mechanical movements',
   },
   {
     id: 4,
-    title: 'kinematics: Trajectory and movement vector',
+    title: 'Kinematics: Trajectory and movement vector',
   },
   {
     id: 5,
-    title: 'kinematics: Velocity',
+    title: 'Kinematics: Velocity',
   },
   {
     id: 6,
-    title: 'kinematics: Acceleration',
+    title: 'Kinematics: Acceleration',
   },
   {
     id: 7,
-    title: 'kinematics: Uniform rectilinear motion',
+    title: 'Kinematics: Uniform rectilinear motion',
   },
   {
     id: 8,
-    title: 'kinematics: Equal-variable rectilinear motion',
+    title: 'Kinematics: Equal-variable rectilinear motion',
   },
   {
     id: 9,
     title: 'Dynamics: Newton`s Laws',
+  },
+  {
+    id: 10,
+    title: 'Dynamics: Force and motion',
+  },
+  {
+    id: 11,
+    title: 'Dynamics: Gravity and weight',
+  },
+  {
+    id: 12,
+    title: 'Dynamics: Impulse and the law of conservation of momentum',
+  },
+  {
+    id: 13,
+    title: 'Dynamics: Friction force',
+  },
+  {
+    id: 14,
+    title: 'Dynamics: Dynamics of circular motion',
+  },
+  {
+    id: 15,
+    title: 'Dynamics: Conservation laws in dynamics',
+  },
+  {
+    id: 16,
+    title: 'Mechanics. Work, energy and power',
+  },
+  {
+    id: 17,
+    title: 'Mechanics. Law of conservation of energy',
+  },
+  {
+    id: 18,
+    title: 'Mechanics. Kinematics: motion, velocity, acceleration.',
+  },
+  {
+    id: 19,
+    title: 'Mechanics. Dynamics: Newton`s laws, forces and their interactions.',
+  },
+  {
+    id: 20,
+    title: 'Mechanics. Impulse and the law of conservation of momentum',
+  },
+  {
+    id: 21,
+    title: 'Thermodynamics. Temperature and thermal equilibrium',
+  },
+  {
+    id: 22,
+    title: 'Thermodynamics. Heat and ways of its transfer',
+  },
+  {
+    id: 23,
+    title: 'Thermodynamics. First and second principles of thermodynamics',
+  },
+  {
+    id: 24,
+    title: 'Thermodynamics. Heat machines',
   },
 ];
 
