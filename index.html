@@ -27,9 +27,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/index-ea6e9237.js"></script>
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-signup-af869907.js">
-    <link rel="stylesheet" href="/ExciteEdu/assets/modal-signup-31e9cc86.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/index-2b98d7cf.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-signup-mobile-1f4ebae4.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/modal-signup-mobile-a2d1f555.css">
   </head>
   <body>
     <header class="header">
@@ -52,7 +52,9 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="./index.html" class="header__link header__link--active">Home</a>
+            <a href="./index.html" class="header__link header__link--active"
+              >Home</a
+            >
           </li>
           <li class="header__item">
             <a href="./self.html" class="header__link">My course</a>
@@ -64,10 +66,14 @@
       </nav>
       <ul class="header__btn-list">
         <li class="header__btn-item">
-          <button class="header__btn header__btn-login" login-modal-open>Login</button>
+          <button class="header__btn header__btn-login" login-modal-open>
+            Login
+          </button>
         </li>
         <li class="header__btn-item">
-          <button class="header__btn header__btn-sign" signup-modal-open>Sign Up</button>
+          <button class="header__btn header__btn-sign" signup-modal-open>
+            Sign Up
+          </button>
         </li>
       </ul>
     </div>
@@ -89,10 +95,12 @@
   <div class="menu__nav">
     <ul class="menu__list">
       <li class="menu__item">
-        <a href="./index.html" class="menu__link header__link--active">Home</a>
+        <a href="./index.html" class="menu__link">Home</a>
       </li>
       <li class="menu__item">
-        <a href="./self.html" class="menu__link">My course</a>
+        <a href="./self.html" class="menu__link header__link--active"
+          >My course</a
+        >
       </li>
       <li class="menu__item">
         <a href="#footer" class="menu__link">Contact us</a>
@@ -100,24 +108,34 @@
     </ul>
     <ul class="menu__btn-list">
       <li class="menu__btn-item header__btn-item">
-        <button class="menu__btn header__btn header__btn-login" login-modal-open>Login</button>
+        <button
+          class="menu__btn header__btn header__btn-login"
+          login-modal-mobile-open
+        >
+          Login
+        </button>
       </li>
       <li class="menu__btn-item header__btn-item">
-        <button class="menu__btn header__btn header__btn-sign">Sign Up</button>
+        <button
+          class="menu__btn header__btn header__btn-sign"
+          signup-modal-mobile-open
+        >
+          Sign Up
+        </button>
       </li>
     </ul>
   </div>
 </div>
 
+
     <div class="container">
-  <div class="backdrop is-hidden" login-modal>
+  <div class="backdrop is-hidden" login-modal login-modal-mobile>
     <div class="modal">
       <div class="modal__box-close" login-modal-close>
         <svg class="modal__icon-close" width="15" height="15">
           <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
         </svg>
       </div>
-      <div class="modal__wrap">
         <h2 class="modal__title">Hello, Welcome Back!</h2>
         <form class="modal__form">
           <ul class="modal__list">
@@ -146,64 +164,83 @@
             <p class="modal__text">Sign up</p>
           </a>
         </form>
-      </div>
     </div>
   </div>
 </div>
 
     <div class="container">
-    <div class="backdrop is-hidden" signup-modal>
-      <div class="signup">
-        <div signup-modal-close class="signup__close">
-          <svg class="signup__icon-close" width="15" height="15">
-            <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
-          </svg>
-        </div>
-        <div class="signup__wrap">
-          <h2 class="signup__title">Hello, Welcome!</h2>
-          <form class="signup__form">
-            <ul class="signup__list">
-                <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="text" placeholder="UserName" />
-            </label>
-          </li>
-              <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="email" placeholder="E-mail" />
-            </label>
-          </li>
-              <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="password" placeholder="Password" />
-              <svg class="signup__icon" width="10" height="10">
+  <div class="backdrop is-hidden" signup-modal signup-modal-mobile id="signup">
+    <div class="signup">
+      <div signup-modal-close class="signup__close">
+        <svg class="signup__icon-close" width="15" height="15">
+          <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-close"></use>
+        </svg>
+      </div>
+      <div class="signup__wrap">
+        <h2 class="signup__title">Hello, Welcome!</h2>
+        <form class="signup__form">
+          <ul class="signup__list">
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="text"
+                  placeholder="UserName"
+                />
+              </label>
+            </li>
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </li>
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="password"
+                  placeholder="Password"
+                />
+                <svg class="signup__icon" width="10" height="10">
                   <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
-              </svg>
-            </label>
-          </li>
-              <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="password" placeholder="Confirm Password" />
-              <svg class="signup__icon" width="10" height="10">
+                </svg>
+              </label>
+            </li>
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+                <svg class="signup__icon" width="10" height="10">
                   <use href="/ExciteEdu/assets/symbol-defs-44104781.svg#icon-eye"></use>
-              </svg>
-            </label>
-          </li>
+                </svg>
+              </label>
+            </li>
           </ul>
           <div class="signup__containre">
-            <input class="signup__checkbox" type="checkbox">
-            <p class="signup__text">I Agree with <span class="signup__orange">privacy</span> and <span class="signup__orange">policy</span></p>
-          </div>
-            <button class="signup__button">Sign up</button>
-            <p class="signup__question">
-              Already have an account?
-              <a href="#" class="signup__link">Sign in</a>
+            <input class="signup__checkbox" type="checkbox" />
+            <p class="signup__text">
+              I Agree with <span class="signup__orange">privacy</span> and
+              <span class="signup__orange">policy</span>
             </p>
-          </form>
-        </div>
+          </div>
+          <button class="signup__button">Sign up</button>
+          <a href="#" class="signup__question">
+            Already have an account?
+            <p class="signup__link">Login</p>
+          </a>
+        </form>
       </div>
     </div>
   </div>
+</div>
+
     <section class="hero">
   <div class="container">
     <div class="hero__wrap">
@@ -654,6 +691,8 @@
   </div>
 </footer>
 
+    
+    
     
     
     
