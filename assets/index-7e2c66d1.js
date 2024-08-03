@@ -1,0 +1,1 @@
+import"./modal-signup-mobile-cdbea56f.js";import r from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";new r(".swiper",{direction:"vertical",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});
