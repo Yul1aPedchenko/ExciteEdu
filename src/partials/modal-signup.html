@@ -1,53 +1,72 @@
 <div class="container">
-    <div class="backdrop is-hidden" signup-modal>
-      <div class="signup">
-        <div signup-modal-close class="signup__close">
-          <svg class="signup__icon-close" width="15" height="15">
-            <use href="./img/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </div>
-        <div class="signup__wrap">
-          <h2 class="signup__title">Hello, Welcome!</h2>
-          <form class="signup__form">
-            <ul class="signup__list">
-                <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="text" placeholder="UserName" />
-            </label>
-          </li>
-              <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="email" placeholder="E-mail" />
-            </label>
-          </li>
-              <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="password" placeholder="Password" />
-              <svg class="signup__icon" width="10" height="10">
+  <div class="backdrop is-hidden" signup-modal signup-modal-mobile id="signup">
+    <div class="signup">
+      <div signup-modal-close class="signup__close">
+        <svg class="signup__icon-close" width="15" height="15">
+          <use href="./img/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </div>
+      <div class="signup__wrap">
+        <h2 class="signup__title">Hello, Welcome!</h2>
+        <form class="signup__form">
+          <ul class="signup__list">
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="text"
+                  placeholder="UserName"
+                />
+              </label>
+            </li>
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </li>
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="password"
+                  placeholder="Password"
+                />
+                <svg class="signup__icon" width="10" height="10">
                   <use href="./img/symbol-defs.svg#icon-eye"></use>
-              </svg>
-            </label>
-          </li>
-              <li class="signup__border">
-            <label class="signup__label">
-              <input class="signup__input" type="password" placeholder="Confirm Password" />
-              <svg class="signup__icon" width="10" height="10">
+                </svg>
+              </label>
+            </li>
+            <li class="signup__border">
+              <label class="signup__label">
+                <input
+                  class="signup__input"
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+                <svg class="signup__icon" width="10" height="10">
                   <use href="./img/symbol-defs.svg#icon-eye"></use>
-              </svg>
-            </label>
-          </li>
+                </svg>
+              </label>
+            </li>
           </ul>
           <div class="signup__containre">
-            <input class="signup__checkbox" type="checkbox">
-            <p class="signup__text">I Agree with <span class="signup__orange">privacy</span> and <span class="signup__orange">policy</span></p>
-          </div>
-            <button class="signup__button">Sign up</button>
-            <p class="signup__question">
-              Already have an account?
-              <a href="#" class="signup__link">Sign in</a>
+            <input class="signup__checkbox" type="checkbox" />
+            <p class="signup__text">
+              I Agree with <span class="signup__orange">privacy</span> and
+              <span class="signup__orange">policy</span>
             </p>
-          </form>
-        </div>
+          </div>
+          <button class="signup__button">Sign up</button>
+          <a href="#" class="signup__question">
+            Already have an account?
+            <p class="signup__link">Login</p>
+          </a>
+        </form>
       </div>
     </div>
   </div>
+</div>

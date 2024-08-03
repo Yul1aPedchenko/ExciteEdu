@@ -104,11 +104,12 @@
     width: 100%;
     height: 40px;
     border-radius: 5px;
-    border: solid 1px black;
+    border: 1px solid $borderColor;
     padding-right: 15px;
+    transition: border 250ms ease-in-out;
   }
   &__input:hover {
-    border: none;
+    border: 1px solid transparent;
   }
   &__input::placeholder {
     font-weight: 400;
@@ -147,22 +148,35 @@
   &__button {
     width: 150px;
     @include accent-btn();
+    margin-bottom: 25px;
     @media screen and (min-width: 768px) {
       margin: 0 auto;
+      margin-bottom: 25px;
     }
-    margin-bottom: 25px;
   }
   &__question {
-    display: block;
-    margin: 30px auto 0;
-    gap: 5px;
-    text-align: center;
-    font-size: 16px;
     font-weight: 400;
+    font-size: 13px;
+    color: $titleColor;
+    transition: text-decoration 250ms ease-in-out,
+      text-decoration-color 250ms ease-in-out;
+    display: flex;
+    text-decoration-color: transparent;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__question:hover {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
   }
   &__link {
-    color: $accentColor;
-    font-size: 16px;
     font-weight: 700;
+    font-size: 13px;
+    color: $accentColor;
+    transition: color 250ms ease-in-out;
+    margin-left: 5px;
+  }
+  &__link:hover {
+    color: $lesserAccentColor;
   }
 }
