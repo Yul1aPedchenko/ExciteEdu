@@ -59,7 +59,6 @@ const displayItem = (items, loadMore = false) => {
     .slice(0, currentItem)
     .map(item => {
       return `<li class="themes__item">
-                <img src="./img/physics.png" alt="themes img" class="themes__img">
                 <h2 class="themes__title">${item.title}</h2>
                 <a href="./study.html" class="themes__link">Start learn</a>
               </li>`;
