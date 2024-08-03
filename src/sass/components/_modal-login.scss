@@ -52,7 +52,7 @@
   }
   &__icon-close {
     stroke: $titleColor;
-    transition: fill 250ms ease-in-out;
+    transition: stroke 250ms ease-in-out;
   }
   &__icon-close:hover {
     stroke: $accentColor;
