@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <scrip type="module"t src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></scrip>
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
@@ -41,7 +41,7 @@
     <load href="partials/footer.html" />
     <script type="module" src="/main.js"></script>
     <script type="module" src="./js/mobile-menu.js"></script>
-    <script>
+    <script type="module">
       const swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
@@ -63,7 +63,7 @@
       });
     </script>
     <script type="module" src="./js/modal-login.js"></script>
-    <script>
+    <script type="module">
       (() => {
         const refs = {
           openModalBtn: document.querySelector('[signup-modal-mobile-open]'),

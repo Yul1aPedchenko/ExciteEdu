@@ -36,7 +36,23 @@
     <script type="module" src="./js/modal-login.js"></script>
     <script type="module" src="./js/modal-login-mobile.js"></script>
     <script type="module" src="./js/modal-signup.js"></script>
-    <script type="module" src="./js/modal-signup-mobile.js"></script>
+    <script type="module">
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[signup-modal-mobile-open]'),
+          closeModalBtn: document.querySelector('[signup-modal-mobile-close]'),
+          modal: document.querySelector('[signup-modal-mobile]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+          document.body.classList.toggle('no-scroll');
+        }
+      })();
+    </script>
     <script type="module" src="./js/modal-remember.js"></script>
     <script type="module" src="./js/resources.js"></script>
   </body>
