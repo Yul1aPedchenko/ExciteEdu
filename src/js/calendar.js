@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Set the current date
   const currentDateElement = document.getElementById('currentDate');
   const currentDate = new Date();
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -8,13 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
     options
   );
 
-  // Initialize FullCalendar
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
     editable: true,
     selectable: true,
-    events: loadEventsFromLocalStorage(), // Load events from local storage
+    events: loadEventsFromLocalStorage(), 
     select: function (info) {
       var title = prompt('Enter Event Title:');
       if (title) {
@@ -38,8 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
   calendar.render();
-
-  // Function to update lesson message
   function updateLessonMessage() {
     var eventsToday = calendar.getEvents().filter(event => {
       return (
@@ -61,17 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Initial update of lesson message
   updateLessonMessage();
 
-  // Open calendar modal on button click
   document
     .getElementById('scheduleButton')
     .addEventListener('click', function () {
       document.getElementById('calendarModal').style.display = 'flex';
     });
 
-  // Close the modal when clicking outside of it
   window.addEventListener('click', function (event) {
     var modal = document.getElementById('calendarModal');
     if (event.target === modal) {
@@ -79,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Save events to local storage
   function saveEventsToLocalStorage(events) {
     var eventsArray = events.map(event => {
       return {
@@ -92,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
     localStorage.setItem('calendarEvents', JSON.stringify(eventsArray));
   }
 
-  // Load events from local storage
   function loadEventsFromLocalStorage() {
     var events = localStorage.getItem('calendarEvents');
     return events ? JSON.parse(events) : [];
