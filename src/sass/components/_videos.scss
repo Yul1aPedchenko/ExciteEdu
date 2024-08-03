@@ -1,0 +1,32 @@
+.videos {
+  padding: 40px 0px;
+  &__title {
+    @include title();
+  }
+  &__span {
+    color: $accentColor;
+  }
+  &__video {
+    width: 350px;
+    height: 200px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .videos {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .videos {
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
