@@ -24,9 +24,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/index-1362a061.js"></script>
-    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-signup-mobile-11fdf38d.js">
-    <link rel="stylesheet" href="/ExciteEdu/assets/modal-signup-mobile-dbbbc2fc.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/modal-signup-mobile-46098f08.js"></script>
+    <link rel="stylesheet" href="/ExciteEdu/assets/modal-signup-mobile-1d77594c.css">
   </head>
   <body>
     <header class="header">
@@ -626,6 +625,28 @@
     </div>
   </div>
 </section>
+<script>
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+  const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+    },
+  });
+</script>
 
     <section class="form" id="form">
     <div class="container">
@@ -691,8 +712,7 @@
 
     
     
-    
-    
+    <!-- <script type="module" src="./js/reviews.js"></script> -->
     
     
     
