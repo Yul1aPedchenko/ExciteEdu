@@ -1,1 +1,0 @@
-import"./modal-signup-mobile-46098f08.js";new Swiper(".swiper-container",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{768:{slidesPerView:2},1200:{slidesPerView:2}}});
