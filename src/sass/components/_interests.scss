@@ -3,7 +3,9 @@
   padding: 20px 0;
   &__title {
     @include title();
-    text-align: center;
+    & {
+      text-align: center;
+    }
   }
   &__text {
     font-weight: 600;
@@ -14,7 +16,9 @@
   }
   &__btn {
     @include accent-btn();
-    max-width: 125px;
+    & {
+      width: 125px;
+    }
   }
 }
 @media screen and (min-width: 768px) {

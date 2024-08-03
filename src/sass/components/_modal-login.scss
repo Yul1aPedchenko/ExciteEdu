@@ -121,7 +121,9 @@
   }
   &__btn {
     @include accent-btn();
-    margin-bottom: 25px;
+    & {
+      margin-bottom: 25px;
+    }
   }
   &__link {
     font-weight: 400;

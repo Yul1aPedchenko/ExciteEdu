@@ -2,7 +2,9 @@
   margin-bottom: 60px;
   &__title {
     @include title();
-    margin-top: 20px;
+    & {
+      margin-top: 20px;
+    }
   }
   &__container {
     border-radius: 8px;
@@ -55,8 +57,10 @@
   }
   &__button {
     @include btn();
-    margin-left: 20px;
-    margin-bottom: 20px;
+    & {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
     @media screen and (min-width: 768px) {
       margin-left: 30px;
       margin-bottom: 30px;

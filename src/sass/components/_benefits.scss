@@ -63,8 +63,10 @@
   }
   &__button {
     @include accent-btn();
-    width: 277px;
-    margin: 0 auto;
+    & {
+      width: 277px;
+      margin: 0 auto;
+    }
     @media screen and (min-width: 768px) {
       margin: 0 auto;
     }

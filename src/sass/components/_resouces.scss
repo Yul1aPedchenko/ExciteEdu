@@ -2,7 +2,9 @@
   padding-top: 80px;
   &__title {
     @include title();
-    margin-bottom: 10px;
+    & {
+      margin-bottom: 10px;
+    }
   }
   &__text {
     color: $textColor;
@@ -104,8 +106,10 @@
   }
   &__button {
     @include btn();
-    margin: 0 auto;
-    margin-top: 60px;
+    & {
+      margin: 0 auto;
+      margin-top: 60px;
+    }
   }
 }
 .resources__item {

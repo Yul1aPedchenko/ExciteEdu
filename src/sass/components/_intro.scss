@@ -45,7 +45,9 @@
   }
   &__text {
     @include title();
-    margin-bottom: 30px;
+    & {
+      margin-bottom: 30px;
+    }
     @media screen and (min-width: 768px) {
       font-size: 40px;
       max-width: 451px;
@@ -68,8 +70,10 @@
   }
   &__button {
     @include accent-btn();
-    width: 300px;
-    text-align: center;
-    margin: 0;
+    & {
+      width: 300px;
+      text-align: center;
+      margin: 0;
+    }
   }
 }

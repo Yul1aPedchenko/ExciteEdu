@@ -11,8 +11,10 @@
   }
   &__title {
     @include title();
-    text-align: center;
-    margin-bottom: 10px;
+    & {
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
   &__containre {
     display: flex;
@@ -55,9 +57,11 @@
     }
   }
   &__button {
-    width: 220px;
     @include accent-btn();
-    margin: 0;
+    & {
+      width: 220px;
+      margin: 0;
+    }
     @media screen and (min-width: 1200px) {
       width: 280px;
     }

@@ -50,7 +50,9 @@
   }
   &__btn {
     @include btn();
-    width: 205px;
+    & {
+      width: 205px;
+    }
   }
   &__img {
     order: -1;

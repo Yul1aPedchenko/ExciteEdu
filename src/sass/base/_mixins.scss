@@ -13,17 +13,19 @@
   }
 }
 @mixin accent-btn() {
-  padding: 9px 40px;
-  border-radius: 8px;
-  background-color: $accentColor;
-  color: $secondaryTitleColor;
-  font-size: 18px;
-  font-weight: 700;
-  display: block;
-  margin: 0 auto;
-  line-height: 120%;
-  border: 1px solid $accentColor;
-  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  & {
+    padding: 9px 40px;
+    border-radius: 8px;
+    background-color: $accentColor;
+    color: $secondaryTitleColor;
+    font-size: 18px;
+    border: 1px solid $accentColor;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    line-height: 120%;
+  }
   &:hover {
     color: $accentColor;
     background-color: $secondaryTitleColor;

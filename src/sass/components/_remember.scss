@@ -2,7 +2,9 @@
   padding: 50px 0;
   &__title {
     @include title();
-    text-align: center;
+    & {
+      text-align: center;
+    }
   }
   &__span {
     color: $accentColor;
@@ -16,7 +18,9 @@
   }
   &__btn {
     @include btn();
-    margin: 0 auto;
+    & {
+      margin: 0 auto;
+    }
   }
 }
 @media screen and (min-width: 768px) {
@@ -32,8 +36,8 @@
   .remember {
     padding: 80px 0;
     &__text {
-        font-size: 32px;
-        margin-bottom: 40px;
+      font-size: 32px;
+      margin-bottom: 40px;
     }
   }
 }
