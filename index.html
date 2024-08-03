@@ -23,10 +23,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <scrip type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></scrip>
     
-    <script type="module" crossorigin src="/ExciteEdu/assets/modal-signup-mobile-106e6780.js"></script>
-    <link rel="stylesheet" href="/ExciteEdu/assets/modal-signup-mobile-1d77594c.css">
+    <script type="module" crossorigin src="/ExciteEdu/assets/index-e66e85c3.js"></script>
+    <link rel="modulepreload" crossorigin href="/ExciteEdu/assets/modal-signup-777ead70.js">
+    <link rel="stylesheet" href="/ExciteEdu/assets/modal-signup-1d77594c.css">
   </head>
   <body>
     <header class="header">
@@ -712,45 +713,9 @@
 
     
     
-    <script>
-      const swiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-          },
-          1200: {
-            slidesPerView: 2,
-          },
-        },
-      });
-    </script>
     
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector('[signup-modal-mobile-open]'),
-          closeModalBtn: document.querySelector('[signup-modal-mobile-close]'),
-          modal: document.querySelector('[signup-modal-mobile]'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
-          document.body.classList.toggle('no-scroll');
-        }
-      })();
-    </script>
+    
+    
     
     
   </body>
