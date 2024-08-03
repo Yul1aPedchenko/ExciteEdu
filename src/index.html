@@ -28,8 +28,8 @@
   </head>
   <body>
     <load href="partials/home/header.html" />
-    <!-- <load href="partials/modal-login.html" />
-    <load href="partials/modal-signup.html" /> -->
+    <load href="partials/modal-login.html" />
+    <load href="partials/modal-signup.html" />
     <load href="partials/home/hero.html" />
     <load href="partials/home/slider.html" />
     <load href="partials/home/interests.html" />
@@ -63,7 +63,23 @@
       });
     </script>
     <script type="module" src="./js/modal-login.js"></script>
-    <script type="module" src="./js/modal-login-mobile.js"></script>
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[signup-modal-mobile-open]'),
+          closeModalBtn: document.querySelector('[signup-modal-mobile-close]'),
+          modal: document.querySelector('[signup-modal-mobile]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+          document.body.classList.toggle('no-scroll');
+        }
+      })();
+    </script>
     <script type="module" src="./js/modal-signup.js"></script>
     <script type="module" src="./js/modal-signup-mobile.js"></script>
   </body>
