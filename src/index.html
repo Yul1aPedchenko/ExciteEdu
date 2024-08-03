@@ -41,7 +41,7 @@
     <load href="partials/footer.html" />
     <script type="module" src="/main.js"></script>
     <script type="module" src="./js/mobile-menu.js"></script>
-    <script type="module">
+    <script type="module" src="./js/reviews.js">
       const swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
@@ -63,22 +63,22 @@
       });
     </script>
     <script type="module" src="./js/modal-login.js"></script>
-    <script type="module">
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector('[signup-modal-mobile-open]'),
-          closeModalBtn: document.querySelector('[signup-modal-mobile-close]'),
-          modal: document.querySelector('[signup-modal-mobile]'),
-        };
+    <script type="module" src="./js/modal-signup-mobile.js">
+      // (() => {
+      //   const refs = {
+      //     openModalBtn: document.querySelector('[signup-modal-mobile-open]'),
+      //     closeModalBtn: document.querySelector('[signup-modal-mobile-close]'),
+      //     modal: document.querySelector('[signup-modal-mobile]'),
+      //   };
 
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
+      //   refs.openModalBtn.addEventListener('click', toggleModal);
+      //   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-        function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
-          document.body.classList.toggle('no-scroll');
-        }
-      })();
+      //   function toggleModal() {
+      //     refs.modal.classList.toggle('is-hidden');
+      //     document.body.classList.toggle('no-scroll');
+      //   }
+      // })();
     </script>
     <script type="module" src="./js/modal-signup.js"></script>
     <script type="module" src="./js/modal-signup-mobile.js"></script>
