@@ -573,6 +573,7 @@ body {
   padding-top: 45px;
   padding-bottom: 71px;
   overflow: hidden;
+  transition: background-image 0.3s ease-in-out;
 }
 .hero__title {
   font-weight: 900;
